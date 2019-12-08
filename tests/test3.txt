@@ -1,0 +1,32 @@
+Sef(Ionel)
+Sef(Marcel)
+Sef(Polo)
+
+Angajat(Nectarie)
+Angajat(Mirciut)
+Angajat(Marco)
+
+MuncaPlictisitoare(ImpinsBolovani)
+MuncaPlictisitoare(SpartNuci)
+MuncaPlictisitoare(TaiatFrunza)
+
+LucreazaLa(Nectarie, ImpinsBolovani)
+LucreazaLa(Mirciut, SpartNuci)
+
+LucreazaPentru(Marco, Polo)
+LucreazaPentru(Mirciut, Marcel)
+LucreazaPentru(Nectarie, Ionel)
+
+
+NuPromoveaza(?sef, ?angajat) : Sef(?sef), Angajat(?angajat), LucreazaPentru(?angajat, ?sef), NonSarguincios(?angajat)
+NonSarguincios(?angajat) : UsorDistras(?angajat)
+UsorDistras(?angajat) : LucreazaLa(?angajat, ?munca), MuncaPlictisitoare(?munca)
+
+? NuPromoveaza(Ionel, Nectarie)
+: True
+
+? NuPromoveaza(Marcel, ?cineva)
+: cineva : Mirciut
+
+? NuPromoveaza(Polo, Marco)
+: False

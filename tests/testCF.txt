@@ -1,0 +1,29 @@
+
+
+simptom(febra)
+simptom(nasInfundat)   % 0.9
+simptom(stareProasta)  % 0.7
+simptom(durereBurta)   % 0.1
+
+diagnostic(viroza) : simptom(stareProasta)  % 0.5
+diagnostic(viroza) : simptom(febra)         % 0.7
+
+infectie(respirator) : simptom(nasInfundat) % 0.8
+infectie(digestiv) : simptom(durereBurta)   % 0.8
+infectie(nervos) : simptom(tulburariOculare) % 0.8
+
+diagnosticViroza(?Sistem) : infectie(?Sistem), diagnostic(viroza)   % 0.9
+
+
+? diagnostic(viroza)
+: True % 0.805
+
+? diagnosticViroza(respirator)
+: True % 0.648
+
+? diagnosticViroza(digestiv)
+: True % 0.072
+
+? diagnosticViroza(nervos)
+: False
+

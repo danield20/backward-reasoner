@@ -1,0 +1,54 @@
+# Pentru suportarea functiilor
+
+size(AB, 3)
+size(BC, 4)
+size(AC, 5)
+size(AD, 4)
+size(CD, 3)
+size(BE, 3)
+size(CE, 3)
+size(AF, 2)
+size(BF, 1)
+
+zero(0)
+is(?X, ?X)
+
+checks_out(1)
+checks_out(2)
+checks_out(3)
+
+triangle(?T) : size(get(?T, 0), ?LA), size(get(?T, 1), ?LB), size(get(?T, 2), ?LC), checks_out(compute_triangle(?LA, ?LB, ?LC))
+
+# get(T, L) intoarce latura L din triunghiul T, unde latura 0 este între primele 2 varfuri, iar latura 1 intre al doilea si al treilea varf
+# compute_triangle(L1, L2, L3) intoarce diferenta dintre suma laturilor mai scurte si latura cea mai lunga
+
+dreptunghic(?T) : size(get(?T, 0), ?LA), size(get(?T, 1), ?LB), size(get(?T, 2), ?LC), is(getShortest(?LA, ?LB, ?LC), ?LS), is(getMiddle(?LA, ?LB, ?LC), ?LM), is(getLongest(?LA, ?LB, ?LC), ?LL), zero(compute_pitagoras(?LS, ?LM, ?LL))
+
+# getShortest intoarce cel mai mic dintre cele 3 argumente
+# getMiddle intoarce argumentul median dintre cele 3 argumente
+# getLongest intoarce cel mai mare dintre cele 3 argumente
+# compute_pitagoras(LS, LM, LL) intoarce LS*LS + LM*LM - LL*LL
+
+? triangle(ABC)
+: True
+? triangle(BCE)
+: True
+? triangle(ACD)
+: True
+
+? triangle(ABF)
+: False
+? triangle(ABD)
+: False
+? triangle(ABE)
+: False
+
+? dreptunghic(ABC)
+: True
+? dreptunghic(ACD)
+: True
+
+? dreptunghic(BCE)
+: False
+? dreptunghic(ABF)
+: False

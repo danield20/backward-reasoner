@@ -1,0 +1,30 @@
+EchipaCursa(SteauaNordului)
+EchipaCursa(FuriosSiIute)
+
+Finantator(FuriosSiIute, Gigel)
+Finantator(SteauaNordului, Becali)
+
+Combustibil(Texaco)
+Combustibil(Shell)
+
+FolosesteCombustibil(FuriosSiIute, Shell)
+
+Calitate(Texaco, Buna)
+
+Zgarcit(Gigel)
+Generos(Becali)
+
+CastigaCursa(?echipa) : EchipaCursa(?echipa), Combustibil(?combustibil), FolosesteCombustibil(?echipa, ?combustibil), Calitate(?combustibil, Buna)
+PierdeCursa(?echipa) : EchipaCursa(?echipa), Combustibil(?combustibil), FolosesteCombustibil(?echipa, ?combustibil), Calitate(?combustibil, Proasta)
+
+FolosesteCombustibil(?echipa, ?combustibil) : Finantator(?echipa, ?finantator), CumparaCombustibil(?finantator, ?combustibil)
+CumparaCombustibil(?finantator, ?combustibil) : Generos(?finantator), Combustibil(?combustibil), Calitate(?combustibil, Buna)
+
+Calitate(?combustibil, Proasta) : Combustibil(?combustibil), IndoitCuApa(?combustibil)
+IndoitCuApa(?combustibil) : FolosesteCombustibil(?echipa, ?combustibil), SubFinantata(?echipa)
+SubFinantata(?echipa) : Finantator(?echipa, ?finantator), Zgarcit(?finantator)
+
+? CastigaCursa(SteauaNordului)
+: True
+? PierdeCursa(FuriosSiIute)
+: True
