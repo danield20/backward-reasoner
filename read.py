@@ -5,10 +5,11 @@ FACTS = "facts"
 RULES = "rules"
 INTERROGATIONS = "ints"
 
-def compose_atom(atom_string):
-    atom_string = atom_string.replace(" ", "")
-    predicate_name = atom_string.split("(")[0]
-    terms = re.split("[(,)]", atom_string)[:-1][1:]
+def compose_function(function_string):
+    function_string = function_string.replace(" ", "")
+    function_name = function_string.split("(")[0]
+    function_string = function_string[:-1][len(function_name) + 1:]
+    terms = re.split(r",(?![^(]*\))", function_string)
     made_terms = []
     for t in terms:
         if t == "":
@@ -16,8 +17,28 @@ def compose_atom(atom_string):
         if "?" in t:
             new_var = atom_utils.make_var(t[1:])
             made_terms.append(new_var)
-        elif "(" in t:
+        else:
+            new_ct = atom_utils.make_const(t)
+            made_terms.append(new_ct)
+
+    return atom_utils.make_function_call(function_name, *made_terms)
+
+def compose_atom(atom_string):
+    atom_string = atom_string.replace(" ", "")
+    predicate_name = atom_string.split("(")[0]
+    atom_string = atom_string[:-1][len(predicate_name) + 1:]
+    terms = re.split(r",(?![^(]*\))", atom_string)
+    made_terms = []
+    for t in terms:
+        if t == "":
             continue
+
+        if "(" in t:
+            new_func = compose_function(t)
+            made_terms.append(new_func)
+        elif "?" in t:
+            new_var = atom_utils.make_var(t[1:])
+            made_terms.append(new_var)
         else:
             new_ct = atom_utils.make_const(t)
             made_terms.append(new_ct)
@@ -29,6 +50,7 @@ def parse_affirmation(line):
         coeficient = 1.0
     else:
         coeficient = float(line.split("%")[1].strip())
+        line = line.split("%")[0].strip()
 
     if ":" not in line:
         return compose_atom(line), coeficient

@@ -103,12 +103,6 @@ def get_premises(formula):
             premises.append(arg)
     return premises
 
-def get_coef(sentence):
-    return sentence[len(sentence) - 1]
-
-def get_index(sentence):
-    return sentence[len(sentence) - 2]
-
 def get_conclusion(formula):
     args = get_args(formula)
     for arg in args:
@@ -283,7 +277,7 @@ def merge(dict1, dict2):
     intersection = keys1 & keys2
 
     for key in intersection:
-        if dict1[key] != dict2[key]:
+        if key in var_sol_list and dict1[key] != dict2[key]:
             return -1
 
     return {**dict1, **dict2}
@@ -309,6 +303,61 @@ def has_same_var_names(conclusion, theorem):
                     if arg == c_arg:
                         subst[get_name(c_arg)] = make_var(get_name(c_arg) + "_c")
     return subst
+
+def get(triangle, i):
+    v1 = triangle[0]
+    v2 = triangle[1]
+    v3 = triangle[2]
+    lat_string = ""
+    i = int(i)
+    if i == 0:
+        lat_string = v1+v2
+    elif i == 1:
+        lat_string = v2+v3
+    else:
+        lat_string = v1+v3
+
+    return make_const(lat_string)
+
+def compute_triangle(l1, l2, l3):
+    l1 = int(l1)
+    l2 = int(l2)
+    l3 = int(l3)
+    longest = max(l1,l2,l3)
+    if l1 == longest:
+        return make_const(str(-longest+l2+l3))
+    elif l2 == longest:
+        return make_const(str(-longest+l1+l3))
+    else:
+        return make_const(str(-longest+l1+l2))
+
+def getShortest(l1, l2, l3):
+    l1 = int(l1)
+    l2 = int(l2)
+    l3 = int(l3)
+    shortest = min(l1,l2,l3)
+    return make_const(str(shortest))
+
+def getMiddle(l1, l2, l3):
+    l1 = int(l1)
+    l2 = int(l2)
+    l3 = int(l3)
+    l = [l1, l2, l3]
+    l.sort()
+    return make_const(str(l[1]))
+
+def getLongest(l1, l2, l3):
+    l1 = int(l1)
+    l2 = int(l2)
+    l3 = int(l3)
+    longest = max(l1,l2,l3)
+    return make_const(str(longest))
+
+def compute_pitagoras(l1, l2, l3):
+    l1 = int(l1)
+    l2 = int(l2)
+    l3 = int(l3)
+    return make_const(str(l1*l1 + l2*l2 - l3*l3))
 
 has_vars = False
 initial_theorem = None
@@ -373,6 +422,22 @@ def calculate_formula_for_rule(rule, initial_rule):
     cur_rule_formula += "10)"
     return cur_rule_formula
 
+def contains_function(theorem):
+    for arg in get_args(theorem):
+        if is_function_call(arg):
+            return True
+    return False
+
+def solve_functions(theorem):
+    new_args = []
+    for arg in get_args(theorem):
+        if is_function_call(arg):
+            result = eval(get_head(arg))(*[x[1] for x in get_args(arg)])
+            new_args.append(result)
+        else:
+            new_args.append(arg)
+    return replace_args(theorem, new_args)
+
 def backward_chaining(kb, theorem, rest_of_theorems, current_sol, tabs, current_formula = "", verbose = True):
     global has_vars
     global was_proved
@@ -398,6 +463,9 @@ def backward_chaining(kb, theorem, rest_of_theorems, current_sol, tabs, current_
 
         if not has_vars and was_proved and not has_coeficients:
             break
+
+        if has_args(theorem) and contains_function(theorem):
+            theorem = solve_functions(theorem)
 
         k = unify(fact, theorem)
 
