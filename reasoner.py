@@ -27,10 +27,12 @@ def print_all_solutions(solutions, var_list):
     return final_string
 
 def main():
-    statements, interogations = read.read_file(sys.argv[1])
+    statements, interogations, coeficients = read.read_file(sys.argv[1])
 
     for st in statements:
-        print(st)
+        print(st, coeficients[atom_utils.convert_to_tuple(st)])
+        if coeficients[atom_utils.convert_to_tuple(st)] != 1:
+            atom_utils.has_coeficients = True
     print()
 
     for intr in interogations:
@@ -42,12 +44,21 @@ def main():
         atom_utils.all_solutions = []
         atom_utils.visited = []
         atom_utils.initial_theorem = intr[1]
+        atom_utils.coeficients = coeficients
+        atom_utils.coeficients_sol_list = []
+        atom_utils.longest_formula = ""
         atom_utils.backward_chaining(statements_aux, intr[1], [], {}, 1)
         print("Gata")
         if atom_utils.has_vars:
             print(print_all_solutions(atom_utils.all_solutions, atom_utils.var_sol_list))
         else:
-            print()
+            if atom_utils.all_solutions == []:
+                print(atom_utils.print_formula(intr[1], return_result= True) + " is false\n")
+            else:
+                print(atom_utils.print_formula(intr[1], return_result= True) + " is True")
+                if atom_utils.has_coeficients:
+                    print("Coeficient: " + "%.3f" % atom_utils.coeficients_sol_list[0])
+                print()
 
 if __name__ == "__main__":
     # this is done for larger tests(testl4)

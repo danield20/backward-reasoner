@@ -24,8 +24,14 @@ def compose_atom(atom_string):
     return atom_utils.make_atom(predicate_name, *made_terms)
 
 def parse_affirmation(line):
+    # for coeficient
+    if "%" not in line:
+        coeficient = 1.0
+    else:
+        coeficient = float(line.split("%")[1].strip())
+
     if ":" not in line:
-        return compose_atom(line)
+        return compose_atom(line), coeficient
     else:
         atom, conditions = line.split(":")[0].strip(),line.split(":")[1].replace(" ","")
         # split by commas not inside parens
@@ -36,7 +42,7 @@ def parse_affirmation(line):
             conditions_list.append(compose_atom(cond))
         neg_conditions_list = [atom_utils.make_neg(x) for x in conditions_list]
 
-        return atom_utils.make_or(real_atom, *neg_conditions_list)
+        return atom_utils.make_or(real_atom, *neg_conditions_list), coeficient
 
 def parse_interogation(line):
     atom = compose_atom(line[2:])
@@ -46,6 +52,7 @@ def read_file(file):
     f = open(file, "r")
     statements = []
     interogations = []
+    coeficients = {}
 
     for line in f:
         line = line.strip()
@@ -58,9 +65,10 @@ def read_file(file):
         if line[0] == "?":
             interogations.append(parse_interogation(line))
         else:
-            x = parse_affirmation(line)
+            x, coef = parse_affirmation(line)
             statements.append(x)
+            coeficients[atom_utils.convert_to_tuple(x)] = coef
 
     f.close()
 
-    return (statements, interogations)
+    return (statements, interogations, coeficients)

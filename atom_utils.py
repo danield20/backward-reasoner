@@ -1,4 +1,5 @@
 import copy
+import re
 
 ### Reprezentare - construcție
 FACT = "FACT"
@@ -101,6 +102,12 @@ def get_premises(formula):
         if is_negative_literal(arg):
             premises.append(arg)
     return premises
+
+def get_coef(sentence):
+    return sentence[len(sentence) - 1]
+
+def get_index(sentence):
+    return sentence[len(sentence) - 2]
 
 def get_conclusion(formula):
     args = get_args(formula)
@@ -259,6 +266,17 @@ def add_statement(kb, conclusion, *hypotheses):
     s = conclusion if not hypotheses else make_or(*([make_neg(s) for s in hypotheses] + [conclusion]))
     kb.append(s)
 
+def convert_to_tuple(x):
+    final_list = []
+    for y in x:
+        if type(y) == list:
+            final_list.append(convert_to_tuple(y))
+        elif type(y) == tuple:
+            final_list.append(convert_to_tuple(y))
+        else:
+            final_list.append(y)
+    return tuple(final_list)
+
 def merge(dict1, dict2):
     keys1 = dict1.keys()
     keys2 = dict2.keys()
@@ -298,6 +316,10 @@ was_proved = False
 all_solutions = []
 var_sol_list = []
 visited =[]
+has_coeficients = False
+coeficients = {}
+coeficients_sol_list = []
+longest_formula = ""
 
 def check_if_sol_exists(current_sol):
 
@@ -315,9 +337,47 @@ def check_if_sol_exists(current_sol):
 
     return False
 
-def backward_chaining(kb, theorem, rest_of_theorems, current_sol, tabs, verbose = True):
+def evaluate_formula(formula):
+    ints = re.findall(r"\d+", formula)
+    ints = sorted(ints, reverse=True)
+    new_formula = ""
+
+    idx = 0
+    while idx < len(formula):
+        found = False
+        for i in ints:
+            if formula.startswith(i, idx):
+                if int(i) == 10:
+                    new_formula += "10"
+                else:
+                    new_formula += str(coeficients[list(coeficients.keys())[int(i)]])
+                found = True
+                if len(i) >= 2:
+                    idx += len(i) - 1
+                break
+        if not found:
+            new_formula += formula[idx]
+        idx += 1
+
+    return eval(new_formula)
+
+def calculate_formula_for_rule(rule, initial_rule):
+    premises = [get_args(x)[0] for x in get_premises(rule)]
+    idx_to_replace = str(list(coeficients.keys()).index(convert_to_tuple(initial_rule)))
+    cur_rule_formula = idx_to_replace + "*min("
+    for premise in premises:
+        if convert_to_tuple(premise) in coeficients:
+            cur_rule_formula += str(list(coeficients.keys()).index(convert_to_tuple(premise))) + ","
+        else:
+            cur_rule_formula += str(premise) + ","
+    cur_rule_formula += "10)"
+    return cur_rule_formula
+
+def backward_chaining(kb, theorem, rest_of_theorems, current_sol, tabs, current_formula = "", verbose = True):
     global has_vars
     global was_proved
+    global has_coeficients
+    global longest_formula
 
     mc = []
 
@@ -336,7 +396,7 @@ def backward_chaining(kb, theorem, rest_of_theorems, current_sol, tabs, verbose 
     # Verificăm dacă teorema este deja demonstrată
     for fact in filter(is_fact, kb):
 
-        if not has_vars and was_proved:
+        if not has_vars and was_proved and not has_coeficients:
             break
 
         k = unify(fact, theorem)
@@ -361,9 +421,15 @@ def backward_chaining(kb, theorem, rest_of_theorems, current_sol, tabs, verbose 
                     if has_vars:
                         print(print_solution(final_sol, tabs))
                         all_solutions.append(final_sol)
+                        if has_coeficients:
+                            if len(current_formula) > len(longest_formula):
+                                longest_formula = current_formula
                     else:
                         print("  " * (tabs + 1) + "***************")
                         print("  " * (tabs + 2) + print_formula(initial_theorem, True) + " is true")
+                        if has_coeficients:
+                            if len(current_formula) > len(longest_formula):
+                                longest_formula = current_formula
                         all_solutions.append("True")
 
                 elif final_sol == {}:
@@ -371,12 +437,16 @@ def backward_chaining(kb, theorem, rest_of_theorems, current_sol, tabs, verbose 
                         was_proved = True
                         print("  " * (tabs + 1) + "***************")
                         print("  " * (tabs + 2) + print_formula(initial_theorem, True) + " is true")
+                        if has_coeficients:
+                            if len(current_formula) > len(longest_formula):
+                                longest_formula = current_formula
                         all_solutions.append("True")
 
                 elif final_sol == -1:
                     print("  " * (tabs + 1) + " Solutie invalida")
 
             else:
+                # daca mai avem fapte de demonstrat
 
                 next_sol = merge(k, current_sol)
                 if next_sol == -1:
@@ -385,13 +455,16 @@ def backward_chaining(kb, theorem, rest_of_theorems, current_sol, tabs, verbose 
                 next_theorem = rest_of_theorems[0]
                 next_rest_theorems = rest_of_theorems[1:]
                 if next_sol != -1:
-                    backward_chaining(kb, next_theorem, next_rest_theorems, next_sol, tabs + 2)
+                    if has_coeficients:
+                        backward_chaining(kb, next_theorem, next_rest_theorems, next_sol, tabs + 2, current_formula=current_formula)
+                    else:
+                        backward_chaining(kb, next_theorem, next_rest_theorems, next_sol, tabs + 2)
 
     # Cautam o regula care sa aiba drept concluzie teorema noastra
     for rule in filter(is_rule, kb):
 
         # daca teorema deja a fost demonstrata si nu trebuie sa gasim toate solutiile ne oprim
-        if not has_vars and was_proved:
+        if not has_vars and was_proved and not has_coeficients:
             break
 
         # rezolvam conflictele de nume
@@ -400,7 +473,7 @@ def backward_chaining(kb, theorem, rest_of_theorems, current_sol, tabs, verbose 
 
         k = unify(get_conclusion(rule_2), theorem)
         if k or k == {}:
-            mc.append((substitute(rule_2,k), k))
+            mc.append((substitute(rule_2,k), rule))
 
     # Trecem prin fiecare regula
     while True:
@@ -408,19 +481,36 @@ def backward_chaining(kb, theorem, rest_of_theorems, current_sol, tabs, verbose 
         if mc == []:
             break
 
-        current_rule, _ = mc.pop()
+        current_rule, initial_rule = mc.pop()
         premises = [get_args(x)[0] for x in get_premises(current_rule)]
         premises.extend(rest_of_theorems)
 
         if verbose:
             print("  " * tabs + print_rule(current_rule, tabs))
 
-        if not has_vars and was_proved:
+        if not has_vars and was_proved and not has_coeficients:
             break
 
-        backward_chaining(kb, premises[0], premises[1:], current_sol, tabs + 1)
+        next_formula = ""
+        if has_coeficients:
+            cur_rule_formula = calculate_formula_for_rule(current_rule, initial_rule)
+
+            if len(mc) == 1:
+                next_current_rule, next_initial_rule = mc[0]
+                cur_rule_formula2 = calculate_formula_for_rule(next_current_rule, next_initial_rule)
+                cur_rule_formula = "(" + cur_rule_formula + "+" + cur_rule_formula2 + "-" + cur_rule_formula \
+                            + "*" + cur_rule_formula2 + ")"
+
+            if current_formula == "":
+                next_formula = cur_rule_formula
+            else:
+                next_formula = current_formula.replace(str(theorem), cur_rule_formula)
+
+        backward_chaining(kb, premises[0], premises[1:], current_sol, tabs + 1, current_formula = next_formula)
 
     if not was_proved and rest_of_theorems == [] and tabs == 1:
        print("  " * tabs + print_formula(initial_theorem, True) + " is false")
+    elif was_proved and rest_of_theorems == [] and has_coeficients and tabs == 1:
+        coeficients_sol_list.append(evaluate_formula(longest_formula))
 
     return
