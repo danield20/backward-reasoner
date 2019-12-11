@@ -1,0 +1,95 @@
+('ATOM', 'Sef', [('CONST', 'Ionel')]) 1.0
+('ATOM', 'Sef', [('CONST', 'Marcel')]) 1.0
+('ATOM', 'Sef', [('CONST', 'Polo')]) 1.0
+('ATOM', 'Angajat', [('CONST', 'Nectarie')]) 1.0
+('ATOM', 'Angajat', [('CONST', 'Mirciut')]) 1.0
+('ATOM', 'Angajat', [('CONST', 'Marco')]) 1.0
+('ATOM', 'MuncaPlictisitoare', [('CONST', 'ImpinsBolovani')]) 1.0
+('ATOM', 'MuncaPlictisitoare', [('CONST', 'SpartNuci')]) 1.0
+('ATOM', 'MuncaPlictisitoare', [('CONST', 'TaiatFrunza')]) 1.0
+('ATOM', 'LucreazaLa', [('CONST', 'Nectarie'), ('CONST', 'ImpinsBolovani')]) 1.0
+('ATOM', 'LucreazaLa', [('CONST', 'Mirciut'), ('CONST', 'SpartNuci')]) 1.0
+('ATOM', 'LucreazaPentru', [('CONST', 'Marco'), ('CONST', 'Polo')]) 1.0
+('ATOM', 'LucreazaPentru', [('CONST', 'Mirciut'), ('CONST', 'Marcel')]) 1.0
+('ATOM', 'LucreazaPentru', [('CONST', 'Nectarie'), ('CONST', 'Ionel')]) 1.0
+('V', 'V', [('ATOM', 'NuPromoveaza', [('VAR', 'sef'), ('VAR', 'angajat')]), ('~', '~', [('ATOM', 'Sef', [('VAR', 'sef')])]), ('~', '~', [('ATOM', 'Angajat', [('VAR', 'angajat')])]), ('~', '~', [('ATOM', 'LucreazaPentru', [('VAR', 'angajat'), ('VAR', 'sef')])]), ('~', '~', [('ATOM', 'NonSarguincios', [('VAR', 'angajat')])])]) 1.0
+('V', 'V', [('ATOM', 'NonSarguincios', [('VAR', 'angajat')]), ('~', '~', [('ATOM', 'UsorDistras', [('VAR', 'angajat')])])]) 1.0
+('V', 'V', [('ATOM', 'UsorDistras', [('VAR', 'angajat')]), ('~', '~', [('ATOM', 'LucreazaLa', [('VAR', 'angajat'), ('VAR', 'munca')])]), ('~', '~', [('ATOM', 'MuncaPlictisitoare', [('VAR', 'munca')])])]) 1.0
+
+Scopul de demonstrat NuPromoveaza(Ionel, Nectarie)
+  Scop curent NuPromoveaza(Ionel, Nectarie)
+  Incercam [ NuPromoveaza(Ionel, Nectarie) : Sef(Ionel), Angajat(Nectarie), LucreazaPentru(Nectarie, Ionel), NonSarguincios(Nectarie) ]
+  Scopuri de demonstrat: Sef(Ionel), Angajat(Nectarie), LucreazaPentru(Nectarie, Ionel), NonSarguincios(Nectarie)
+    Scop curent Sef(Ionel)
+      Sef(Ionel) este un fapt
+        Scop curent Angajat(Nectarie)
+          Angajat(Nectarie) este un fapt
+            Scop curent LucreazaPentru(Nectarie, Ionel)
+              LucreazaPentru(Nectarie, Ionel) este un fapt
+                Scop curent NonSarguincios(Nectarie)
+                Incercam [ NonSarguincios(Nectarie) : UsorDistras(Nectarie) ]
+                Scopuri de demonstrat: UsorDistras(Nectarie)
+                  Scop curent UsorDistras(Nectarie)
+                  Incercam [ UsorDistras(Nectarie) : LucreazaLa(Nectarie, ?munca), MuncaPlictisitoare(?munca) ]
+                  Scopuri de demonstrat: LucreazaLa(Nectarie, ?munca), MuncaPlictisitoare(?munca)
+                    Scop curent LucreazaLa(Nectarie, ?munca)
+                      LucreazaLa(Nectarie, ImpinsBolovani) este un fapt
+                        Scop curent MuncaPlictisitoare(ImpinsBolovani)
+                          MuncaPlictisitoare(ImpinsBolovani) este un fapt
+                          ***************
+                            NuPromoveaza(Ionel, Nectarie) is true
+Gata
+NuPromoveaza(Ionel, Nectarie) is True
+
+Scopul de demonstrat NuPromoveaza(Marcel, ?cineva)
+  Scop curent NuPromoveaza(Marcel, ?cineva)
+  Incercam [ NuPromoveaza(Marcel, ?cineva) : Sef(Marcel), Angajat(?cineva), LucreazaPentru(?cineva, Marcel), NonSarguincios(?cineva) ]
+  Scopuri de demonstrat: Sef(Marcel), Angajat(?cineva), LucreazaPentru(?cineva, Marcel), NonSarguincios(?cineva)
+    Scop curent Sef(Marcel)
+      Sef(Marcel) este un fapt
+        Scop curent Angajat(?cineva)
+          Angajat(Nectarie) este un fapt
+            Scop curent LucreazaPentru(Nectarie, Marcel)
+          Angajat(Mirciut) este un fapt
+            Scop curent LucreazaPentru(Mirciut, Marcel)
+              LucreazaPentru(Mirciut, Marcel) este un fapt
+                Scop curent NonSarguincios(Mirciut)
+                Incercam [ NonSarguincios(Mirciut) : UsorDistras(Mirciut) ]
+                Scopuri de demonstrat: UsorDistras(Mirciut)
+                  Scop curent UsorDistras(Mirciut)
+                  Incercam [ UsorDistras(Mirciut) : LucreazaLa(Mirciut, ?munca), MuncaPlictisitoare(?munca) ]
+                  Scopuri de demonstrat: LucreazaLa(Mirciut, ?munca), MuncaPlictisitoare(?munca)
+                    Scop curent LucreazaLa(Mirciut, ?munca)
+                      LucreazaLa(Mirciut, SpartNuci) este un fapt
+                        Scop curent MuncaPlictisitoare(SpartNuci)
+                          MuncaPlictisitoare(SpartNuci) este un fapt
+                          ***************
+                          Solution:
+                            cineva : Mirciut
+                            munca : SpartNuci
+          Angajat(Marco) este un fapt
+            Scop curent LucreazaPentru(Marco, Marcel)
+Gata
+Solution 0 = cineva : ('CONST', 'Mirciut')
+
+Scopul de demonstrat NuPromoveaza(Polo, Marco)
+  Scop curent NuPromoveaza(Polo, Marco)
+  Incercam [ NuPromoveaza(Polo, Marco) : Sef(Polo), Angajat(Marco), LucreazaPentru(Marco, Polo), NonSarguincios(Marco) ]
+  Scopuri de demonstrat: Sef(Polo), Angajat(Marco), LucreazaPentru(Marco, Polo), NonSarguincios(Marco)
+    Scop curent Sef(Polo)
+      Sef(Polo) este un fapt
+        Scop curent Angajat(Marco)
+          Angajat(Marco) este un fapt
+            Scop curent LucreazaPentru(Marco, Polo)
+              LucreazaPentru(Marco, Polo) este un fapt
+                Scop curent NonSarguincios(Marco)
+                Incercam [ NonSarguincios(Marco) : UsorDistras(Marco) ]
+                Scopuri de demonstrat: UsorDistras(Marco)
+                  Scop curent UsorDistras(Marco)
+                  Incercam [ UsorDistras(Marco) : LucreazaLa(Marco, ?munca), MuncaPlictisitoare(?munca) ]
+                  Scopuri de demonstrat: LucreazaLa(Marco, ?munca), MuncaPlictisitoare(?munca)
+                    Scop curent LucreazaLa(Marco, ?munca)
+  NuPromoveaza(Polo, Marco) is false
+Gata
+NuPromoveaza(Polo, Marco) is false
+

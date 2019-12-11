@@ -1,0 +1,828 @@
+('ATOM', 'P58', [('CONST', '1082'), ('CONST', '861')]) 1.0
+('ATOM', 'P3', [('CONST', '4')]) 1.0
+('ATOM', 'P16', [('CONST', '2920')]) 1.0
+('ATOM', 'P17', [('CONST', '1350')]) 1.0
+('ATOM', 'P36', [('CONST', '182'), ('CONST', '363')]) 1.0
+('ATOM', 'P35', [('CONST', '2651'), ('CONST', '622'), ('CONST', '2638')]) 1.0
+('ATOM', 'P46', [('CONST', '4')]) 1.0
+('ATOM', 'P27', [('CONST', '4')]) 1.0
+('ATOM', 'P61', [('CONST', '4')]) 1.0
+('ATOM', 'P32', [('CONST', '4'), ('CONST', '7')]) 1.0
+('ATOM', 'P8', [('CONST', '489'), ('CONST', '922')]) 1.0
+('ATOM', 'P4', [('CONST', '2595'), ('CONST', '2338'), ('CONST', '1815')]) 1.0
+('ATOM', 'P57', [('CONST', '182'), ('CONST', '363'), ('CONST', '544')]) 1.0
+('ATOM', 'P37', [('CONST', '4')]) 1.0
+('ATOM', 'P48', [('CONST', '2367')]) 1.0
+('ATOM', 'P46', [('CONST', '182')]) 1.0
+('ATOM', 'P11', [('CONST', '488')]) 1.0
+('ATOM', 'P53', [('CONST', '182')]) 1.0
+('ATOM', 'P17', [('CONST', '2519')]) 1.0
+('ATOM', 'P25', [('CONST', '182'), ('CONST', '363'), ('CONST', '544')]) 1.0
+('ATOM', 'P6', [('CONST', '2350')]) 1.0
+('ATOM', 'P50', [('CONST', '182'), ('CONST', '363')]) 1.0
+('ATOM', 'P24', [('CONST', '1842'), ('CONST', '2058')]) 1.0
+('ATOM', 'P15', [('CONST', '653'), ('CONST', '658'), ('CONST', '158')]) 1.0
+('ATOM', 'P58', [('CONST', '1928'), ('CONST', '2155')]) 1.0
+('ATOM', 'P39', [('CONST', '4')]) 1.0
+('ATOM', 'P42', [('CONST', '2646'), ('CONST', '2608'), ('CONST', '879')]) 1.0
+('ATOM', 'P47', [('CONST', '2879'), ('CONST', '1830'), ('CONST', '1636')]) 1.0
+('ATOM', 'P5', [('CONST', '264'), ('CONST', '1484'), ('CONST', '2795')]) 1.0
+('ATOM', 'P60', [('CONST', '4'), ('CONST', '7')]) 1.0
+('ATOM', 'P23', [('CONST', '1990'), ('CONST', '2500'), ('CONST', '2896')]) 1.0
+('ATOM', 'P20', [('CONST', '182'), ('CONST', '363'), ('CONST', '544')]) 1.0
+('ATOM', 'P61', [('CONST', '1549')]) 1.0
+('ATOM', 'P53', [('CONST', '2792')]) 1.0
+('ATOM', 'P48', [('CONST', '182')]) 1.0
+('ATOM', 'P28', [('CONST', '1477')]) 1.0
+('ATOM', 'P44', [('CONST', '2763'), ('CONST', '2357'), ('CONST', '61')]) 1.0
+('ATOM', 'P58', [('CONST', '182'), ('CONST', '363')]) 1.0
+('ATOM', 'P18', [('CONST', '182'), ('CONST', '363'), ('CONST', '544')]) 1.0
+('ATOM', 'P26', [('CONST', '1518'), ('CONST', '1819'), ('CONST', '721')]) 1.0
+('ATOM', 'P28', [('CONST', '1722')]) 1.0
+('ATOM', 'P30', [('CONST', '182'), ('CONST', '363'), ('CONST', '544')]) 1.0
+('ATOM', 'P46', [('CONST', '2373')]) 1.0
+('ATOM', 'P53', [('CONST', '4')]) 1.0
+('ATOM', 'P50', [('CONST', '1745'), ('CONST', '775')]) 1.0
+('ATOM', 'P49', [('CONST', '4'), ('CONST', '7')]) 1.0
+('ATOM', 'P4', [('CONST', '741'), ('CONST', '773'), ('CONST', '2373')]) 1.0
+('ATOM', 'P44', [('CONST', '4'), ('CONST', '7'), ('CONST', '10')]) 1.0
+('ATOM', 'P37', [('CONST', '182')]) 1.0
+('ATOM', 'P51', [('CONST', '4'), ('CONST', '7')]) 1.0
+('ATOM', 'P24', [('CONST', '4'), ('CONST', '7')]) 1.0
+('ATOM', 'P16', [('CONST', '2037')]) 1.0
+('ATOM', 'P38', [('CONST', '524')]) 1.0
+('ATOM', 'P3', [('CONST', '2920')]) 1.0
+('ATOM', 'P27', [('CONST', '182')]) 1.0
+('ATOM', 'P56', [('CONST', '4')]) 1.0
+('ATOM', 'P8', [('CONST', '4'), ('CONST', '7')]) 1.0
+('ATOM', 'P14', [('CONST', '182'), ('CONST', '363')]) 1.0
+('ATOM', 'P63', [('CONST', '1591'), ('CONST', '407')]) 1.0
+('ATOM', 'P53', [('CONST', '783')]) 1.0
+('ATOM', 'P25', [('CONST', '4'), ('CONST', '7'), ('CONST', '10')]) 1.0
+('ATOM', 'P51', [('CONST', '1822'), ('CONST', '288')]) 1.0
+('ATOM', 'P63', [('CONST', '182'), ('CONST', '363')]) 1.0
+('ATOM', 'P63', [('CONST', '4'), ('CONST', '7')]) 1.0
+('ATOM', 'P16', [('CONST', '182')]) 1.0
+('ATOM', 'P26', [('CONST', '2926'), ('CONST', '1714'), ('CONST', '2161')]) 1.0
+('ATOM', 'P15', [('CONST', '2328'), ('CONST', '2641'), ('CONST', '459')]) 1.0
+('ATOM', 'P36', [('CONST', '4'), ('CONST', '7')]) 1.0
+('ATOM', 'P61', [('CONST', '1735')]) 1.0
+('ATOM', 'P63', [('CONST', '1150'), ('CONST', '2350')]) 1.0
+('ATOM', 'P55', [('CONST', '2466'), ('CONST', '238'), ('CONST', '242')]) 1.0
+('ATOM', 'P14', [('CONST', '268'), ('CONST', '748')]) 1.0
+('ATOM', 'P21', [('CONST', '4'), ('CONST', '7'), ('CONST', '10')]) 1.0
+('ATOM', 'P55', [('CONST', '182'), ('CONST', '363'), ('CONST', '544')]) 1.0
+('ATOM', 'P26', [('CONST', '300'), ('CONST', '1790'), ('CONST', '2285')]) 1.0
+('ATOM', 'P48', [('CONST', '1011')]) 1.0
+('ATOM', 'P63', [('CONST', '2237'), ('CONST', '2369')]) 1.0
+('ATOM', 'P21', [('CONST', '182'), ('CONST', '363'), ('CONST', '544')]) 1.0
+('ATOM', 'P15', [('CONST', '2877'), ('CONST', '2545'), ('CONST', '2186')]) 1.0
+('ATOM', 'P9', [('CONST', '182'), ('CONST', '363')]) 1.0
+('ATOM', 'P23', [('CONST', '1134'), ('CONST', '2745'), ('CONST', '2572')]) 1.0
+('ATOM', 'P61', [('CONST', '2600')]) 1.0
+('ATOM', 'P46', [('CONST', '1961')]) 1.0
+('ATOM', 'P23', [('CONST', '97'), ('CONST', '2960'), ('CONST', '2095')]) 1.0
+('ATOM', 'P11', [('CONST', '182')]) 1.0
+('ATOM', 'P53', [('CONST', '2022')]) 1.0
+('ATOM', 'P36', [('CONST', '2406'), ('CONST', '3000')]) 1.0
+('ATOM', 'P8', [('CONST', '182'), ('CONST', '363')]) 1.0
+('ATOM', 'P35', [('CONST', '182'), ('CONST', '363'), ('CONST', '544')]) 1.0
+('ATOM', 'P28', [('CONST', '2640')]) 1.0
+('ATOM', 'P36', [('CONST', '1062'), ('CONST', '2313')]) 1.0
+('ATOM', 'P54', [('CONST', '182')]) 1.0
+('ATOM', 'P17', [('CONST', '182')]) 1.0
+('ATOM', 'P5', [('CONST', '182'), ('CONST', '363'), ('CONST', '544')]) 1.0
+('ATOM', 'P27', [('CONST', '1078')]) 1.0
+('ATOM', 'P53', [('CONST', '541')]) 1.0
+('ATOM', 'P15', [('CONST', '4'), ('CONST', '7'), ('CONST', '10')]) 1.0
+('ATOM', 'P38', [('CONST', '182')]) 1.0
+('ATOM', 'P10', [('CONST', '4')]) 1.0
+('ATOM', 'P18', [('CONST', '527'), ('CONST', '623'), ('CONST', '2076')]) 1.0
+('ATOM', 'P40', [('CONST', '182'), ('CONST', '363'), ('CONST', '544')]) 1.0
+('ATOM', 'P55', [('CONST', '4'), ('CONST', '7'), ('CONST', '10')]) 1.0
+('ATOM', 'P49', [('CONST', '182'), ('CONST', '363')]) 1.0
+('ATOM', 'P18', [('CONST', '4'), ('CONST', '7'), ('CONST', '10')]) 1.0
+('ATOM', 'P42', [('CONST', '168'), ('CONST', '2383'), ('CONST', '736')]) 1.0
+('ATOM', 'P32', [('CONST', '827'), ('CONST', '795')]) 1.0
+('ATOM', 'P51', [('CONST', '182'), ('CONST', '363')]) 1.0
+('ATOM', 'P11', [('CONST', '4')]) 1.0
+('ATOM', 'P62', [('CONST', '195'), ('CONST', '369')]) 1.0
+('ATOM', 'P28', [('CONST', '4')]) 1.0
+('ATOM', 'P44', [('CONST', '182'), ('CONST', '363'), ('CONST', '544')]) 1.0
+('ATOM', 'P51', [('CONST', '2347'), ('CONST', '550')]) 1.0
+('ATOM', 'P26', [('CONST', '182'), ('CONST', '363'), ('CONST', '544')]) 1.0
+('ATOM', 'P20', [('CONST', '4'), ('CONST', '7'), ('CONST', '10')]) 1.0
+('ATOM', 'P62', [('CONST', '4'), ('CONST', '7')]) 1.0
+('ATOM', 'P38', [('CONST', '4')]) 1.0
+('ATOM', 'P9', [('CONST', '258'), ('CONST', '1261')]) 1.0
+('ATOM', 'P30', [('CONST', '976'), ('CONST', '1537'), ('CONST', '417')]) 1.0
+('ATOM', 'P24', [('CONST', '1024'), ('CONST', '1958')]) 1.0
+('ATOM', 'P28', [('CONST', '182')]) 1.0
+('ATOM', 'P42', [('CONST', '4'), ('CONST', '7'), ('CONST', '10')]) 1.0
+('ATOM', 'P4', [('CONST', '4'), ('CONST', '7'), ('CONST', '10')]) 1.0
+('ATOM', 'P18', [('CONST', '768'), ('CONST', '149'), ('CONST', '836')]) 1.0
+('ATOM', 'P60', [('CONST', '9'), ('CONST', '2673')]) 1.0
+('ATOM', 'P24', [('CONST', '182'), ('CONST', '363')]) 1.0
+('ATOM', 'P35', [('CONST', '4'), ('CONST', '7'), ('CONST', '10')]) 1.0
+('ATOM', 'P25', [('CONST', '2049'), ('CONST', '477'), ('CONST', '940')]) 1.0
+('ATOM', 'P25', [('CONST', '2430'), ('CONST', '1484'), ('CONST', '278')]) 1.0
+('ATOM', 'P53', [('CONST', '1042')]) 1.0
+('ATOM', 'P23', [('CONST', '2667'), ('CONST', '2721'), ('CONST', '538')]) 1.0
+('ATOM', 'P25', [('CONST', '613'), ('CONST', '170'), ('CONST', '116')]) 1.0
+('ATOM', 'P15', [('CONST', '182'), ('CONST', '363'), ('CONST', '544')]) 1.0
+('ATOM', 'P17', [('CONST', '4')]) 1.0
+('ATOM', 'P6', [('CONST', '2279')]) 1.0
+('ATOM', 'P4', [('CONST', '182'), ('CONST', '363'), ('CONST', '544')]) 1.0
+('ATOM', 'P47', [('CONST', '4'), ('CONST', '7'), ('CONST', '10')]) 1.0
+('ATOM', 'P10', [('CONST', '182')]) 1.0
+('ATOM', 'P61', [('CONST', '182')]) 1.0
+('ATOM', 'P5', [('CONST', '2478'), ('CONST', '2337'), ('CONST', '1042')]) 1.0
+('ATOM', 'P23', [('CONST', '4'), ('CONST', '7'), ('CONST', '10')]) 1.0
+('ATOM', 'P58', [('CONST', '4'), ('CONST', '7')]) 1.0
+('ATOM', 'P16', [('CONST', '4')]) 1.0
+('ATOM', 'P47', [('CONST', '182'), ('CONST', '363'), ('CONST', '544')]) 1.0
+('ATOM', 'P54', [('CONST', '4')]) 1.0
+('ATOM', 'P58', [('CONST', '601'), ('CONST', '540')]) 1.0
+('ATOM', 'P8', [('CONST', '1468'), ('CONST', '2364')]) 1.0
+('ATOM', 'P50', [('CONST', '4'), ('CONST', '7')]) 1.0
+('ATOM', 'P26', [('CONST', '2962'), ('CONST', '2757'), ('CONST', '1368')]) 1.0
+('ATOM', 'P14', [('CONST', '578'), ('CONST', '2699')]) 1.0
+('ATOM', 'P62', [('CONST', '1158'), ('CONST', '2630')]) 1.0
+('ATOM', 'P4', [('CONST', '2973'), ('CONST', '2590'), ('CONST', '1532')]) 1.0
+('ATOM', 'P58', [('CONST', '1938'), ('CONST', '198')]) 1.0
+('ATOM', 'P62', [('CONST', '182'), ('CONST', '363')]) 1.0
+('ATOM', 'P40', [('CONST', '1734'), ('CONST', '1973'), ('CONST', '2464')]) 1.0
+('ATOM', 'P42', [('CONST', '182'), ('CONST', '363'), ('CONST', '544')]) 1.0
+('ATOM', 'P6', [('CONST', '182')]) 1.0
+('ATOM', 'P23', [('CONST', '182'), ('CONST', '363'), ('CONST', '544')]) 1.0
+('ATOM', 'P8', [('CONST', '1233'), ('CONST', '2494')]) 1.0
+('ATOM', 'P5', [('CONST', '4'), ('CONST', '7'), ('CONST', '10')]) 1.0
+('ATOM', 'P56', [('CONST', '182')]) 1.0
+('ATOM', 'P61', [('CONST', '2077')]) 1.0
+('ATOM', 'P9', [('CONST', '4'), ('CONST', '7')]) 1.0
+('ATOM', 'P3', [('CONST', '182')]) 1.0
+('ATOM', 'P25', [('CONST', '2999'), ('CONST', '471'), ('CONST', '149')]) 1.0
+('ATOM', 'P40', [('CONST', '4'), ('CONST', '7'), ('CONST', '10')]) 1.0
+('ATOM', 'P27', [('CONST', '1410')]) 1.0
+('ATOM', 'P6', [('CONST', '4')]) 1.0
+('ATOM', 'P57', [('CONST', '4'), ('CONST', '7'), ('CONST', '10')]) 1.0
+('ATOM', 'P30', [('CONST', '4'), ('CONST', '7'), ('CONST', '10')]) 1.0
+('ATOM', 'P48', [('CONST', '956')]) 1.0
+('ATOM', 'P44', [('CONST', '356'), ('CONST', '1173'), ('CONST', '2257')]) 1.0
+('ATOM', 'P32', [('CONST', '182'), ('CONST', '363')]) 1.0
+('ATOM', 'P14', [('CONST', '4'), ('CONST', '7')]) 1.0
+('ATOM', 'P16', [('CONST', '2045')]) 1.0
+('ATOM', 'P3', [('CONST', '2443')]) 1.0
+('ATOM', 'P57', [('CONST', '354'), ('CONST', '1261'), ('CONST', '365')]) 1.0
+('ATOM', 'P62', [('CONST', '2638'), ('CONST', '1063')]) 1.0
+('ATOM', 'P6', [('CONST', '2311')]) 1.0
+('ATOM', 'P58', [('CONST', '2544'), ('CONST', '161')]) 1.0
+('ATOM', 'P18', [('CONST', '1685'), ('CONST', '247'), ('CONST', '690')]) 1.0
+('ATOM', 'P63', [('CONST', '657'), ('CONST', '2552')]) 1.0
+('ATOM', 'P60', [('CONST', '182'), ('CONST', '363')]) 1.0
+('ATOM', 'P39', [('CONST', '182')]) 1.0
+('ATOM', 'P15', [('CONST', '592'), ('CONST', '1331'), ('CONST', '1903')]) 1.0
+('ATOM', 'P16', [('CONST', '818')]) 1.0
+('ATOM', 'P48', [('CONST', '4')]) 1.0
+('ATOM', 'P15', [('CONST', '1806'), ('CONST', '467'), ('CONST', '1334')]) 1.0
+('ATOM', 'P26', [('CONST', '4'), ('CONST', '7'), ('CONST', '10')]) 1.0
+('ATOM', 'P40', [('CONST', '549'), ('CONST', '400'), ('CONST', '158')]) 1.0
+('ATOM', 'P4', [('CONST', '2976'), ('CONST', '1351'), ('CONST', '427')]) 1.0
+('ATOM', 'P26', [('CONST', '2020'), ('CONST', '1861'), ('CONST', '560')]) 1.0
+('ATOM', 'P36', [('CONST', '1948'), ('CONST', '4')]) 1.0
+('ATOM', 'P40', [('CONST', '2044'), ('CONST', '153'), ('CONST', '550')]) 1.0
+('ATOM', 'P25', [('CONST', '521'), ('CONST', '893'), ('CONST', '1346')]) 1.0
+('V', 'V', [('ATOM', 'P0', [('VAR', 'x0')]), ('~', '~', [('ATOM', 'P1', [('VAR', 'x0')])]), ('~', '~', [('ATOM', 'P12', [('VAR', 'x0'), ('VAR', 'x1')])]), ('~', '~', [('ATOM', 'P33', [('VAR', 'x0'), ('VAR', 'x1'), ('VAR', 'x2')])]), ('~', '~', [('ATOM', 'P63', [('VAR', 'x0'), ('VAR', 'x1')])])]) 1.0
+('V', 'V', [('ATOM', 'P1', [('VAR', 'x0')]), ('~', '~', [('ATOM', 'P2', [('VAR', 'x0')])]), ('~', '~', [('ATOM', 'P6', [('VAR', 'x0')])]), ('~', '~', [('ATOM', 'P7', [('VAR', 'x0'), ('VAR', 'x1')])])]) 1.0
+('V', 'V', [('ATOM', 'P2', [('VAR', 'x0')]), ('~', '~', [('ATOM', 'P3', [('VAR', 'x0')])]), ('~', '~', [('ATOM', 'P4', [('VAR', 'x0'), ('VAR', 'x1'), ('VAR', 'x2')])]), ('~', '~', [('ATOM', 'P5', [('VAR', 'x0'), ('VAR', 'x1'), ('VAR', 'x2')])])]) 1.0
+('V', 'V', [('ATOM', 'P7', [('VAR', 'x0'), ('VAR', 'x1')]), ('~', '~', [('ATOM', 'P8', [('VAR', 'x0'), ('VAR', 'x1')])]), ('~', '~', [('ATOM', 'P9', [('VAR', 'x0'), ('VAR', 'x1')])]), ('~', '~', [('ATOM', 'P10', [('VAR', 'x0')])]), ('~', '~', [('ATOM', 'P11', [('VAR', 'x0')])])]) 1.0
+('V', 'V', [('ATOM', 'P12', [('VAR', 'x0'), ('VAR', 'x1')]), ('~', '~', [('ATOM', 'P13', [('VAR', 'x0'), ('VAR', 'x1')])]), ('~', '~', [('ATOM', 'P19', [('VAR', 'x0'), ('VAR', 'x1'), ('VAR', 'x2')])]), ('~', '~', [('ATOM', 'P21', [('VAR', 'x0'), ('VAR', 'x1'), ('VAR', 'x2')])]), ('~', '~', [('ATOM', 'P22', [('VAR', 'x0'), ('VAR', 'x1'), ('VAR', 'x2')])]), ('~', '~', [('ATOM', 'P29', [('VAR', 'x0'), ('VAR', 'x1'), ('VAR', 'x2')])]), ('~', '~', [('ATOM', 'P31', [('VAR', 'x0'), ('VAR', 'x1')])])]) 1.0
+('V', 'V', [('ATOM', 'P13', [('VAR', 'x0'), ('VAR', 'x1')]), ('~', '~', [('ATOM', 'P14', [('VAR', 'x0'), ('VAR', 'x1')])]), ('~', '~', [('ATOM', 'P15', [('VAR', 'x0'), ('VAR', 'x1'), ('VAR', 'x2')])]), ('~', '~', [('ATOM', 'P16', [('VAR', 'x0')])]), ('~', '~', [('ATOM', 'P17', [('VAR', 'x0')])]), ('~', '~', [('ATOM', 'P18', [('VAR', 'x0'), ('VAR', 'x1'), ('VAR', 'x2')])])]) 1.0
+('V', 'V', [('ATOM', 'P19', [('VAR', 'x0'), ('VAR', 'x1'), ('VAR', 'x2')]), ('~', '~', [('ATOM', 'P20', [('VAR', 'x0'), ('VAR', 'x1'), ('VAR', 'x2')])])]) 1.0
+('V', 'V', [('ATOM', 'P22', [('VAR', 'x0'), ('VAR', 'x1'), ('VAR', 'x2')]), ('~', '~', [('ATOM', 'P23', [('VAR', 'x0'), ('VAR', 'x1'), ('VAR', 'x2')])]), ('~', '~', [('ATOM', 'P24', [('VAR', 'x0'), ('VAR', 'x1')])]), ('~', '~', [('ATOM', 'P25', [('VAR', 'x0'), ('VAR', 'x1'), ('VAR', 'x2')])]), ('~', '~', [('ATOM', 'P26', [('VAR', 'x0'), ('VAR', 'x1'), ('VAR', 'x2')])]), ('~', '~', [('ATOM', 'P27', [('VAR', 'x0')])]), ('~', '~', [('ATOM', 'P28', [('VAR', 'x0')])])]) 1.0
+('V', 'V', [('ATOM', 'P29', [('VAR', 'x0'), ('VAR', 'x1'), ('VAR', 'x2')]), ('~', '~', [('ATOM', 'P30', [('VAR', 'x0'), ('VAR', 'x1'), ('VAR', 'x2')])])]) 1.0
+('V', 'V', [('ATOM', 'P31', [('VAR', 'x0'), ('VAR', 'x1')]), ('~', '~', [('ATOM', 'P32', [('VAR', 'x0'), ('VAR', 'x1')])])]) 1.0
+('V', 'V', [('ATOM', 'P33', [('VAR', 'x0'), ('VAR', 'x1'), ('VAR', 'x2')]), ('~', '~', [('ATOM', 'P34', [('VAR', 'x0'), ('VAR', 'x1'), ('VAR', 'x2')])]), ('~', '~', [('ATOM', 'P41', [('VAR', 'x0'), ('VAR', 'x1'), ('VAR', 'x2')])]), ('~', '~', [('ATOM', 'P43', [('VAR', 'x0'), ('VAR', 'x1'), ('VAR', 'x2')])]), ('~', '~', [('ATOM', 'P45', [('VAR', 'x0')])]), ('~', '~', [('ATOM', 'P52', [('VAR', 'x0')])]), ('~', '~', [('ATOM', 'P59', [('VAR', 'x0'), ('VAR', 'x1')])])]) 1.0
+('V', 'V', [('ATOM', 'P34', [('VAR', 'x0'), ('VAR', 'x1'), ('VAR', 'x2')]), ('~', '~', [('ATOM', 'P35', [('VAR', 'x0'), ('VAR', 'x1'), ('VAR', 'x2')])]), ('~', '~', [('ATOM', 'P36', [('VAR', 'x0'), ('VAR', 'x1')])]), ('~', '~', [('ATOM', 'P37', [('VAR', 'x0')])]), ('~', '~', [('ATOM', 'P38', [('VAR', 'x0')])]), ('~', '~', [('ATOM', 'P39', [('VAR', 'x0')])]), ('~', '~', [('ATOM', 'P40', [('VAR', 'x0'), ('VAR', 'x1'), ('VAR', 'x2')])])]) 1.0
+('V', 'V', [('ATOM', 'P41', [('VAR', 'x0'), ('VAR', 'x1'), ('VAR', 'x2')]), ('~', '~', [('ATOM', 'P42', [('VAR', 'x0'), ('VAR', 'x1'), ('VAR', 'x2')])])]) 1.0
+('V', 'V', [('ATOM', 'P43', [('VAR', 'x0'), ('VAR', 'x1'), ('VAR', 'x2')]), ('~', '~', [('ATOM', 'P44', [('VAR', 'x0'), ('VAR', 'x1'), ('VAR', 'x2')])])]) 1.0
+('V', 'V', [('ATOM', 'P45', [('VAR', 'x0')]), ('~', '~', [('ATOM', 'P46', [('VAR', 'x0')])]), ('~', '~', [('ATOM', 'P47', [('VAR', 'x0'), ('VAR', 'x1'), ('VAR', 'x2')])]), ('~', '~', [('ATOM', 'P48', [('VAR', 'x0')])]), ('~', '~', [('ATOM', 'P49', [('VAR', 'x0'), ('VAR', 'x1')])]), ('~', '~', [('ATOM', 'P50', [('VAR', 'x0'), ('VAR', 'x1')])]), ('~', '~', [('ATOM', 'P51', [('VAR', 'x0'), ('VAR', 'x1')])])]) 1.0
+('V', 'V', [('ATOM', 'P52', [('VAR', 'x0')]), ('~', '~', [('ATOM', 'P53', [('VAR', 'x0')])]), ('~', '~', [('ATOM', 'P54', [('VAR', 'x0')])]), ('~', '~', [('ATOM', 'P55', [('VAR', 'x0'), ('VAR', 'x1'), ('VAR', 'x2')])]), ('~', '~', [('ATOM', 'P56', [('VAR', 'x0')])]), ('~', '~', [('ATOM', 'P57', [('VAR', 'x0'), ('VAR', 'x1'), ('VAR', 'x2')])]), ('~', '~', [('ATOM', 'P58', [('VAR', 'x0'), ('VAR', 'x1')])])]) 1.0
+('V', 'V', [('ATOM', 'P59', [('VAR', 'x0'), ('VAR', 'x1')]), ('~', '~', [('ATOM', 'P60', [('VAR', 'x0'), ('VAR', 'x1')])]), ('~', '~', [('ATOM', 'P61', [('VAR', 'x0')])]), ('~', '~', [('ATOM', 'P62', [('VAR', 'x0'), ('VAR', 'x1')])])]) 1.0
+
+Scopul de demonstrat P0(4)
+  Scop curent P0(4)
+  Incercam [ P0(4) : P1(4), P12(4, ?x1), P33(4, ?x1, ?x2), P63(4, ?x1) ]
+  Scopuri de demonstrat: P1(4), P12(4, ?x1), P33(4, ?x1, ?x2), P63(4, ?x1)
+    Scop curent P1(4)
+    Incercam [ P1(4) : P2(4), P6(4), P7(4, ?x1) ]
+    Scopuri de demonstrat: P2(4), P6(4), P7(4, ?x1)
+      Scop curent P2(4)
+      Incercam [ P2(4) : P3(4), P4(4, ?x1, ?x2), P5(4, ?x1, ?x2) ]
+      Scopuri de demonstrat: P3(4), P4(4, ?x1, ?x2), P5(4, ?x1, ?x2)
+        Scop curent P3(4)
+          P3(4) este un fapt
+            Scop curent P4(4, ?x1, ?x2)
+              P4(4, 7, 10) este un fapt
+                Scop curent P5(4, 7, 10)
+                  P5(4, 7, 10) este un fapt
+                    Scop curent P6(4)
+                      P6(4) este un fapt
+                        Scop curent P7(4, 7)
+                        Incercam [ P7(4, 7) : P8(4, 7), P9(4, 7), P10(4), P11(4) ]
+                        Scopuri de demonstrat: P8(4, 7), P9(4, 7), P10(4), P11(4)
+                          Scop curent P8(4, 7)
+                            P8(4, 7) este un fapt
+                              Scop curent P9(4, 7)
+                                P9(4, 7) este un fapt
+                                  Scop curent P10(4)
+                                    P10(4) este un fapt
+                                      Scop curent P11(4)
+                                        P11(4) este un fapt
+                                          Scop curent P12(4, 7)
+                                          Incercam [ P12(4, 7) : P13(4, 7), P19(4, 7, ?x2), P21(4, 7, ?x2), P22(4, 7, ?x2), P29(4, 7, ?x2), P31(4, 7) ]
+                                          Scopuri de demonstrat: P13(4, 7), P19(4, 7, ?x2), P21(4, 7, ?x2), P22(4, 7, ?x2), P29(4, 7, ?x2), P31(4, 7)
+                                            Scop curent P13(4, 7)
+                                            Incercam [ P13(4, 7) : P14(4, 7), P15(4, 7, ?x2), P16(4), P17(4), P18(4, 7, ?x2) ]
+                                            Scopuri de demonstrat: P14(4, 7), P15(4, 7, ?x2), P16(4), P17(4), P18(4, 7, ?x2)
+                                              Scop curent P14(4, 7)
+                                                P14(4, 7) este un fapt
+                                                  Scop curent P15(4, 7, 10)
+                                                    P15(4, 7, 10) este un fapt
+                                                      Scop curent P16(4)
+                                                        P16(4) este un fapt
+                                                          Scop curent P17(4)
+                                                            P17(4) este un fapt
+                                                              Scop curent P18(4, 7, 10)
+                                                                P18(4, 7, 10) este un fapt
+                                                                  Scop curent P19(4, 7, 10)
+                                                                  Incercam [ P19(4, 7, 10) : P20(4, 7, 10) ]
+                                                                  Scopuri de demonstrat: P20(4, 7, 10)
+                                                                    Scop curent P20(4, 7, 10)
+                                                                      P20(4, 7, 10) este un fapt
+                                                                        Scop curent P21(4, 7, 10)
+                                                                          P21(4, 7, 10) este un fapt
+                                                                            Scop curent P22(4, 7, 10)
+                                                                            Incercam [ P22(4, 7, 10) : P23(4, 7, 10), P24(4, 7), P25(4, 7, 10), P26(4, 7, 10), P27(4), P28(4) ]
+                                                                            Scopuri de demonstrat: P23(4, 7, 10), P24(4, 7), P25(4, 7, 10), P26(4, 7, 10), P27(4), P28(4)
+                                                                              Scop curent P23(4, 7, 10)
+                                                                                P23(4, 7, 10) este un fapt
+                                                                                  Scop curent P24(4, 7)
+                                                                                    P24(4, 7) este un fapt
+                                                                                      Scop curent P25(4, 7, 10)
+                                                                                        P25(4, 7, 10) este un fapt
+                                                                                          Scop curent P26(4, 7, 10)
+                                                                                            P26(4, 7, 10) este un fapt
+                                                                                              Scop curent P27(4)
+                                                                                                P27(4) este un fapt
+                                                                                                  Scop curent P28(4)
+                                                                                                    P28(4) este un fapt
+                                                                                                      Scop curent P29(4, 7, 10)
+                                                                                                      Incercam [ P29(4, 7, 10) : P30(4, 7, 10) ]
+                                                                                                      Scopuri de demonstrat: P30(4, 7, 10)
+                                                                                                        Scop curent P30(4, 7, 10)
+                                                                                                          P30(4, 7, 10) este un fapt
+                                                                                                            Scop curent P31(4, 7)
+                                                                                                            Incercam [ P31(4, 7) : P32(4, 7) ]
+                                                                                                            Scopuri de demonstrat: P32(4, 7)
+                                                                                                              Scop curent P32(4, 7)
+                                                                                                                P32(4, 7) este un fapt
+                                                                                                                  Scop curent P33(4, 7, 10)
+                                                                                                                  Incercam [ P33(4, 7, 10) : P34(4, 7, 10), P41(4, 7, 10), P43(4, 7, 10), P45(4), P52(4), P59(4, 7) ]
+                                                                                                                  Scopuri de demonstrat: P34(4, 7, 10), P41(4, 7, 10), P43(4, 7, 10), P45(4), P52(4), P59(4, 7)
+                                                                                                                    Scop curent P34(4, 7, 10)
+                                                                                                                    Incercam [ P34(4, 7, 10) : P35(4, 7, 10), P36(4, 7), P37(4), P38(4), P39(4), P40(4, 7, 10) ]
+                                                                                                                    Scopuri de demonstrat: P35(4, 7, 10), P36(4, 7), P37(4), P38(4), P39(4), P40(4, 7, 10)
+                                                                                                                      Scop curent P35(4, 7, 10)
+                                                                                                                        P35(4, 7, 10) este un fapt
+                                                                                                                          Scop curent P36(4, 7)
+                                                                                                                            P36(4, 7) este un fapt
+                                                                                                                              Scop curent P37(4)
+                                                                                                                                P37(4) este un fapt
+                                                                                                                                  Scop curent P38(4)
+                                                                                                                                    P38(4) este un fapt
+                                                                                                                                      Scop curent P39(4)
+                                                                                                                                        P39(4) este un fapt
+                                                                                                                                          Scop curent P40(4, 7, 10)
+                                                                                                                                            P40(4, 7, 10) este un fapt
+                                                                                                                                              Scop curent P41(4, 7, 10)
+                                                                                                                                              Incercam [ P41(4, 7, 10) : P42(4, 7, 10) ]
+                                                                                                                                              Scopuri de demonstrat: P42(4, 7, 10)
+                                                                                                                                                Scop curent P42(4, 7, 10)
+                                                                                                                                                  P42(4, 7, 10) este un fapt
+                                                                                                                                                    Scop curent P43(4, 7, 10)
+                                                                                                                                                    Incercam [ P43(4, 7, 10) : P44(4, 7, 10) ]
+                                                                                                                                                    Scopuri de demonstrat: P44(4, 7, 10)
+                                                                                                                                                      Scop curent P44(4, 7, 10)
+                                                                                                                                                        P44(4, 7, 10) este un fapt
+                                                                                                                                                          Scop curent P45(4)
+                                                                                                                                                          Incercam [ P45(4) : P46(4), P47(4, ?x1, ?x2), P48(4), P49(4, ?x1), P50(4, ?x1), P51(4, ?x1) ]
+                                                                                                                                                          Scopuri de demonstrat: P46(4), P47(4, ?x1, ?x2), P48(4), P49(4, ?x1), P50(4, ?x1), P51(4, ?x1)
+                                                                                                                                                            Scop curent P46(4)
+                                                                                                                                                              P46(4) este un fapt
+                                                                                                                                                                Scop curent P47(4, 7, 10)
+                                                                                                                                                                  P47(4, 7, 10) este un fapt
+                                                                                                                                                                    Scop curent P48(4)
+                                                                                                                                                                      P48(4) este un fapt
+                                                                                                                                                                        Scop curent P49(4, 7)
+                                                                                                                                                                          P49(4, 7) este un fapt
+                                                                                                                                                                            Scop curent P50(4, 7)
+                                                                                                                                                                              P50(4, 7) este un fapt
+                                                                                                                                                                                Scop curent P51(4, 7)
+                                                                                                                                                                                  P51(4, 7) este un fapt
+                                                                                                                                                                                    Scop curent P52(4)
+                                                                                                                                                                                    Incercam [ P52(4) : P53(4), P54(4), P55(4, ?x1, ?x2), P56(4), P57(4, ?x1, ?x2), P58(4, ?x1) ]
+                                                                                                                                                                                    Scopuri de demonstrat: P53(4), P54(4), P55(4, ?x1, ?x2), P56(4), P57(4, ?x1, ?x2), P58(4, ?x1)
+                                                                                                                                                                                      Scop curent P53(4)
+                                                                                                                                                                                        P53(4) este un fapt
+                                                                                                                                                                                          Scop curent P54(4)
+                                                                                                                                                                                            P54(4) este un fapt
+                                                                                                                                                                                              Scop curent P55(4, 7, 10)
+                                                                                                                                                                                                P55(4, 7, 10) este un fapt
+                                                                                                                                                                                                  Scop curent P56(4)
+                                                                                                                                                                                                    P56(4) este un fapt
+                                                                                                                                                                                                      Scop curent P57(4, 7, 10)
+                                                                                                                                                                                                        P57(4, 7, 10) este un fapt
+                                                                                                                                                                                                          Scop curent P58(4, 7)
+                                                                                                                                                                                                            P58(4, 7) este un fapt
+                                                                                                                                                                                                              Scop curent P59(4, 7)
+                                                                                                                                                                                                              Incercam [ P59(4, 7) : P60(4, 7), P61(4), P62(4, 7) ]
+                                                                                                                                                                                                              Scopuri de demonstrat: P60(4, 7), P61(4), P62(4, 7)
+                                                                                                                                                                                                                Scop curent P60(4, 7)
+                                                                                                                                                                                                                  P60(4, 7) este un fapt
+                                                                                                                                                                                                                    Scop curent P61(4)
+                                                                                                                                                                                                                      P61(4) este un fapt
+                                                                                                                                                                                                                        Scop curent P62(4, 7)
+                                                                                                                                                                                                                          P62(4, 7) este un fapt
+                                                                                                                                                                                                                            Scop curent P63(4, 7)
+                                                                                                                                                                                                                              P63(4, 7) este un fapt
+                                                                                                                                                                                                                              ***************
+                                                                                                                                                                                                                                P0(4) is true
+Gata
+P0(4) is True
+
+Scopul de demonstrat P0(182)
+  Scop curent P0(182)
+  Incercam [ P0(182) : P1(182), P12(182, ?x1), P33(182, ?x1, ?x2), P63(182, ?x1) ]
+  Scopuri de demonstrat: P1(182), P12(182, ?x1), P33(182, ?x1, ?x2), P63(182, ?x1)
+    Scop curent P1(182)
+    Incercam [ P1(182) : P2(182), P6(182), P7(182, ?x1) ]
+    Scopuri de demonstrat: P2(182), P6(182), P7(182, ?x1)
+      Scop curent P2(182)
+      Incercam [ P2(182) : P3(182), P4(182, ?x1, ?x2), P5(182, ?x1, ?x2) ]
+      Scopuri de demonstrat: P3(182), P4(182, ?x1, ?x2), P5(182, ?x1, ?x2)
+        Scop curent P3(182)
+          P3(182) este un fapt
+            Scop curent P4(182, ?x1, ?x2)
+              P4(182, 363, 544) este un fapt
+                Scop curent P5(182, 363, 544)
+                  P5(182, 363, 544) este un fapt
+                    Scop curent P6(182)
+                      P6(182) este un fapt
+                        Scop curent P7(182, 363)
+                        Incercam [ P7(182, 363) : P8(182, 363), P9(182, 363), P10(182), P11(182) ]
+                        Scopuri de demonstrat: P8(182, 363), P9(182, 363), P10(182), P11(182)
+                          Scop curent P8(182, 363)
+                            P8(182, 363) este un fapt
+                              Scop curent P9(182, 363)
+                                P9(182, 363) este un fapt
+                                  Scop curent P10(182)
+                                    P10(182) este un fapt
+                                      Scop curent P11(182)
+                                        P11(182) este un fapt
+                                          Scop curent P12(182, 363)
+                                          Incercam [ P12(182, 363) : P13(182, 363), P19(182, 363, ?x2), P21(182, 363, ?x2), P22(182, 363, ?x2), P29(182, 363, ?x2), P31(182, 363) ]
+                                          Scopuri de demonstrat: P13(182, 363), P19(182, 363, ?x2), P21(182, 363, ?x2), P22(182, 363, ?x2), P29(182, 363, ?x2), P31(182, 363)
+                                            Scop curent P13(182, 363)
+                                            Incercam [ P13(182, 363) : P14(182, 363), P15(182, 363, ?x2), P16(182), P17(182), P18(182, 363, ?x2) ]
+                                            Scopuri de demonstrat: P14(182, 363), P15(182, 363, ?x2), P16(182), P17(182), P18(182, 363, ?x2)
+                                              Scop curent P14(182, 363)
+                                                P14(182, 363) este un fapt
+                                                  Scop curent P15(182, 363, 544)
+                                                    P15(182, 363, 544) este un fapt
+                                                      Scop curent P16(182)
+                                                        P16(182) este un fapt
+                                                          Scop curent P17(182)
+                                                            P17(182) este un fapt
+                                                              Scop curent P18(182, 363, 544)
+                                                                P18(182, 363, 544) este un fapt
+                                                                  Scop curent P19(182, 363, 544)
+                                                                  Incercam [ P19(182, 363, 544) : P20(182, 363, 544) ]
+                                                                  Scopuri de demonstrat: P20(182, 363, 544)
+                                                                    Scop curent P20(182, 363, 544)
+                                                                      P20(182, 363, 544) este un fapt
+                                                                        Scop curent P21(182, 363, 544)
+                                                                          P21(182, 363, 544) este un fapt
+                                                                            Scop curent P22(182, 363, 544)
+                                                                            Incercam [ P22(182, 363, 544) : P23(182, 363, 544), P24(182, 363), P25(182, 363, 544), P26(182, 363, 544), P27(182), P28(182) ]
+                                                                            Scopuri de demonstrat: P23(182, 363, 544), P24(182, 363), P25(182, 363, 544), P26(182, 363, 544), P27(182), P28(182)
+                                                                              Scop curent P23(182, 363, 544)
+                                                                                P23(182, 363, 544) este un fapt
+                                                                                  Scop curent P24(182, 363)
+                                                                                    P24(182, 363) este un fapt
+                                                                                      Scop curent P25(182, 363, 544)
+                                                                                        P25(182, 363, 544) este un fapt
+                                                                                          Scop curent P26(182, 363, 544)
+                                                                                            P26(182, 363, 544) este un fapt
+                                                                                              Scop curent P27(182)
+                                                                                                P27(182) este un fapt
+                                                                                                  Scop curent P28(182)
+                                                                                                    P28(182) este un fapt
+                                                                                                      Scop curent P29(182, 363, 544)
+                                                                                                      Incercam [ P29(182, 363, 544) : P30(182, 363, 544) ]
+                                                                                                      Scopuri de demonstrat: P30(182, 363, 544)
+                                                                                                        Scop curent P30(182, 363, 544)
+                                                                                                          P30(182, 363, 544) este un fapt
+                                                                                                            Scop curent P31(182, 363)
+                                                                                                            Incercam [ P31(182, 363) : P32(182, 363) ]
+                                                                                                            Scopuri de demonstrat: P32(182, 363)
+                                                                                                              Scop curent P32(182, 363)
+                                                                                                                P32(182, 363) este un fapt
+                                                                                                                  Scop curent P33(182, 363, 544)
+                                                                                                                  Incercam [ P33(182, 363, 544) : P34(182, 363, 544), P41(182, 363, 544), P43(182, 363, 544), P45(182), P52(182), P59(182, 363) ]
+                                                                                                                  Scopuri de demonstrat: P34(182, 363, 544), P41(182, 363, 544), P43(182, 363, 544), P45(182), P52(182), P59(182, 363)
+                                                                                                                    Scop curent P34(182, 363, 544)
+                                                                                                                    Incercam [ P34(182, 363, 544) : P35(182, 363, 544), P36(182, 363), P37(182), P38(182), P39(182), P40(182, 363, 544) ]
+                                                                                                                    Scopuri de demonstrat: P35(182, 363, 544), P36(182, 363), P37(182), P38(182), P39(182), P40(182, 363, 544)
+                                                                                                                      Scop curent P35(182, 363, 544)
+                                                                                                                        P35(182, 363, 544) este un fapt
+                                                                                                                          Scop curent P36(182, 363)
+                                                                                                                            P36(182, 363) este un fapt
+                                                                                                                              Scop curent P37(182)
+                                                                                                                                P37(182) este un fapt
+                                                                                                                                  Scop curent P38(182)
+                                                                                                                                    P38(182) este un fapt
+                                                                                                                                      Scop curent P39(182)
+                                                                                                                                        P39(182) este un fapt
+                                                                                                                                          Scop curent P40(182, 363, 544)
+                                                                                                                                            P40(182, 363, 544) este un fapt
+                                                                                                                                              Scop curent P41(182, 363, 544)
+                                                                                                                                              Incercam [ P41(182, 363, 544) : P42(182, 363, 544) ]
+                                                                                                                                              Scopuri de demonstrat: P42(182, 363, 544)
+                                                                                                                                                Scop curent P42(182, 363, 544)
+                                                                                                                                                  P42(182, 363, 544) este un fapt
+                                                                                                                                                    Scop curent P43(182, 363, 544)
+                                                                                                                                                    Incercam [ P43(182, 363, 544) : P44(182, 363, 544) ]
+                                                                                                                                                    Scopuri de demonstrat: P44(182, 363, 544)
+                                                                                                                                                      Scop curent P44(182, 363, 544)
+                                                                                                                                                        P44(182, 363, 544) este un fapt
+                                                                                                                                                          Scop curent P45(182)
+                                                                                                                                                          Incercam [ P45(182) : P46(182), P47(182, ?x1, ?x2), P48(182), P49(182, ?x1), P50(182, ?x1), P51(182, ?x1) ]
+                                                                                                                                                          Scopuri de demonstrat: P46(182), P47(182, ?x1, ?x2), P48(182), P49(182, ?x1), P50(182, ?x1), P51(182, ?x1)
+                                                                                                                                                            Scop curent P46(182)
+                                                                                                                                                              P46(182) este un fapt
+                                                                                                                                                                Scop curent P47(182, 363, 544)
+                                                                                                                                                                  P47(182, 363, 544) este un fapt
+                                                                                                                                                                    Scop curent P48(182)
+                                                                                                                                                                      P48(182) este un fapt
+                                                                                                                                                                        Scop curent P49(182, 363)
+                                                                                                                                                                          P49(182, 363) este un fapt
+                                                                                                                                                                            Scop curent P50(182, 363)
+                                                                                                                                                                              P50(182, 363) este un fapt
+                                                                                                                                                                                Scop curent P51(182, 363)
+                                                                                                                                                                                  P51(182, 363) este un fapt
+                                                                                                                                                                                    Scop curent P52(182)
+                                                                                                                                                                                    Incercam [ P52(182) : P53(182), P54(182), P55(182, ?x1, ?x2), P56(182), P57(182, ?x1, ?x2), P58(182, ?x1) ]
+                                                                                                                                                                                    Scopuri de demonstrat: P53(182), P54(182), P55(182, ?x1, ?x2), P56(182), P57(182, ?x1, ?x2), P58(182, ?x1)
+                                                                                                                                                                                      Scop curent P53(182)
+                                                                                                                                                                                        P53(182) este un fapt
+                                                                                                                                                                                          Scop curent P54(182)
+                                                                                                                                                                                            P54(182) este un fapt
+                                                                                                                                                                                              Scop curent P55(182, 363, 544)
+                                                                                                                                                                                                P55(182, 363, 544) este un fapt
+                                                                                                                                                                                                  Scop curent P56(182)
+                                                                                                                                                                                                    P56(182) este un fapt
+                                                                                                                                                                                                      Scop curent P57(182, 363, 544)
+                                                                                                                                                                                                        P57(182, 363, 544) este un fapt
+                                                                                                                                                                                                          Scop curent P58(182, 363)
+                                                                                                                                                                                                            P58(182, 363) este un fapt
+                                                                                                                                                                                                              Scop curent P59(182, 363)
+                                                                                                                                                                                                              Incercam [ P59(182, 363) : P60(182, 363), P61(182), P62(182, 363) ]
+                                                                                                                                                                                                              Scopuri de demonstrat: P60(182, 363), P61(182), P62(182, 363)
+                                                                                                                                                                                                                Scop curent P60(182, 363)
+                                                                                                                                                                                                                  P60(182, 363) este un fapt
+                                                                                                                                                                                                                    Scop curent P61(182)
+                                                                                                                                                                                                                      P61(182) este un fapt
+                                                                                                                                                                                                                        Scop curent P62(182, 363)
+                                                                                                                                                                                                                          P62(182, 363) este un fapt
+                                                                                                                                                                                                                            Scop curent P63(182, 363)
+                                                                                                                                                                                                                              P63(182, 363) este un fapt
+                                                                                                                                                                                                                              ***************
+                                                                                                                                                                                                                                P0(182) is true
+Gata
+P0(182) is True
+
+Scopul de demonstrat P0(21)
+  Scop curent P0(21)
+  Incercam [ P0(21) : P1(21), P12(21, ?x1), P33(21, ?x1, ?x2), P63(21, ?x1) ]
+  Scopuri de demonstrat: P1(21), P12(21, ?x1), P33(21, ?x1, ?x2), P63(21, ?x1)
+    Scop curent P1(21)
+    Incercam [ P1(21) : P2(21), P6(21), P7(21, ?x1) ]
+    Scopuri de demonstrat: P2(21), P6(21), P7(21, ?x1)
+      Scop curent P2(21)
+      Incercam [ P2(21) : P3(21), P4(21, ?x1, ?x2), P5(21, ?x1, ?x2) ]
+      Scopuri de demonstrat: P3(21), P4(21, ?x1, ?x2), P5(21, ?x1, ?x2)
+        Scop curent P3(21)
+  P0(21) is false
+Gata
+P0(21) is false
+
+Scopul de demonstrat P0(?x0)
+  Scop curent P0(?x0)
+  Incercam [ P0(?x0) : P1(?x0), P12(?x0, ?x1), P33(?x0, ?x1, ?x2), P63(?x0, ?x1) ]
+  Scopuri de demonstrat: P1(?x0), P12(?x0, ?x1), P33(?x0, ?x1, ?x2), P63(?x0, ?x1)
+    Scop curent P1(?x0)
+    Incercam [ P1(?x0) : P2(?x0), P6(?x0), P7(?x0, ?x1) ]
+    Scopuri de demonstrat: P2(?x0), P6(?x0), P7(?x0, ?x1)
+      Scop curent P2(?x0)
+      Incercam [ P2(?x0) : P3(?x0), P4(?x0, ?x1, ?x2), P5(?x0, ?x1, ?x2) ]
+      Scopuri de demonstrat: P3(?x0), P4(?x0, ?x1, ?x2), P5(?x0, ?x1, ?x2)
+        Scop curent P3(?x0)
+          P3(4) este un fapt
+            Scop curent P4(4, ?x1, ?x2)
+              P4(4, 7, 10) este un fapt
+                Scop curent P5(4, 7, 10)
+                  P5(4, 7, 10) este un fapt
+                    Scop curent P6(4)
+                      P6(4) este un fapt
+                        Scop curent P7(4, 7)
+                        Incercam [ P7(4, 7) : P8(4, 7), P9(4, 7), P10(4), P11(4) ]
+                        Scopuri de demonstrat: P8(4, 7), P9(4, 7), P10(4), P11(4)
+                          Scop curent P8(4, 7)
+                            P8(4, 7) este un fapt
+                              Scop curent P9(4, 7)
+                                P9(4, 7) este un fapt
+                                  Scop curent P10(4)
+                                    P10(4) este un fapt
+                                      Scop curent P11(4)
+                                        P11(4) este un fapt
+                                          Scop curent P12(4, 7)
+                                          Incercam [ P12(4, 7) : P13(4, 7), P19(4, 7, ?x2), P21(4, 7, ?x2), P22(4, 7, ?x2), P29(4, 7, ?x2), P31(4, 7) ]
+                                          Scopuri de demonstrat: P13(4, 7), P19(4, 7, ?x2), P21(4, 7, ?x2), P22(4, 7, ?x2), P29(4, 7, ?x2), P31(4, 7)
+                                            Scop curent P13(4, 7)
+                                            Incercam [ P13(4, 7) : P14(4, 7), P15(4, 7, ?x2), P16(4), P17(4), P18(4, 7, ?x2) ]
+                                            Scopuri de demonstrat: P14(4, 7), P15(4, 7, ?x2), P16(4), P17(4), P18(4, 7, ?x2)
+                                              Scop curent P14(4, 7)
+                                                P14(4, 7) este un fapt
+                                                  Scop curent P15(4, 7, 10)
+                                                    P15(4, 7, 10) este un fapt
+                                                      Scop curent P16(4)
+                                                        P16(4) este un fapt
+                                                          Scop curent P17(4)
+                                                            P17(4) este un fapt
+                                                              Scop curent P18(4, 7, 10)
+                                                                P18(4, 7, 10) este un fapt
+                                                                  Scop curent P19(4, 7, 10)
+                                                                  Incercam [ P19(4, 7, 10) : P20(4, 7, 10) ]
+                                                                  Scopuri de demonstrat: P20(4, 7, 10)
+                                                                    Scop curent P20(4, 7, 10)
+                                                                      P20(4, 7, 10) este un fapt
+                                                                        Scop curent P21(4, 7, 10)
+                                                                          P21(4, 7, 10) este un fapt
+                                                                            Scop curent P22(4, 7, 10)
+                                                                            Incercam [ P22(4, 7, 10) : P23(4, 7, 10), P24(4, 7), P25(4, 7, 10), P26(4, 7, 10), P27(4), P28(4) ]
+                                                                            Scopuri de demonstrat: P23(4, 7, 10), P24(4, 7), P25(4, 7, 10), P26(4, 7, 10), P27(4), P28(4)
+                                                                              Scop curent P23(4, 7, 10)
+                                                                                P23(4, 7, 10) este un fapt
+                                                                                  Scop curent P24(4, 7)
+                                                                                    P24(4, 7) este un fapt
+                                                                                      Scop curent P25(4, 7, 10)
+                                                                                        P25(4, 7, 10) este un fapt
+                                                                                          Scop curent P26(4, 7, 10)
+                                                                                            P26(4, 7, 10) este un fapt
+                                                                                              Scop curent P27(4)
+                                                                                                P27(4) este un fapt
+                                                                                                  Scop curent P28(4)
+                                                                                                    P28(4) este un fapt
+                                                                                                      Scop curent P29(4, 7, 10)
+                                                                                                      Incercam [ P29(4, 7, 10) : P30(4, 7, 10) ]
+                                                                                                      Scopuri de demonstrat: P30(4, 7, 10)
+                                                                                                        Scop curent P30(4, 7, 10)
+                                                                                                          P30(4, 7, 10) este un fapt
+                                                                                                            Scop curent P31(4, 7)
+                                                                                                            Incercam [ P31(4, 7) : P32(4, 7) ]
+                                                                                                            Scopuri de demonstrat: P32(4, 7)
+                                                                                                              Scop curent P32(4, 7)
+                                                                                                                P32(4, 7) este un fapt
+                                                                                                                  Scop curent P33(4, 7, 10)
+                                                                                                                  Incercam [ P33(4, 7, 10) : P34(4, 7, 10), P41(4, 7, 10), P43(4, 7, 10), P45(4), P52(4), P59(4, 7) ]
+                                                                                                                  Scopuri de demonstrat: P34(4, 7, 10), P41(4, 7, 10), P43(4, 7, 10), P45(4), P52(4), P59(4, 7)
+                                                                                                                    Scop curent P34(4, 7, 10)
+                                                                                                                    Incercam [ P34(4, 7, 10) : P35(4, 7, 10), P36(4, 7), P37(4), P38(4), P39(4), P40(4, 7, 10) ]
+                                                                                                                    Scopuri de demonstrat: P35(4, 7, 10), P36(4, 7), P37(4), P38(4), P39(4), P40(4, 7, 10)
+                                                                                                                      Scop curent P35(4, 7, 10)
+                                                                                                                        P35(4, 7, 10) este un fapt
+                                                                                                                          Scop curent P36(4, 7)
+                                                                                                                            P36(4, 7) este un fapt
+                                                                                                                              Scop curent P37(4)
+                                                                                                                                P37(4) este un fapt
+                                                                                                                                  Scop curent P38(4)
+                                                                                                                                    P38(4) este un fapt
+                                                                                                                                      Scop curent P39(4)
+                                                                                                                                        P39(4) este un fapt
+                                                                                                                                          Scop curent P40(4, 7, 10)
+                                                                                                                                            P40(4, 7, 10) este un fapt
+                                                                                                                                              Scop curent P41(4, 7, 10)
+                                                                                                                                              Incercam [ P41(4, 7, 10) : P42(4, 7, 10) ]
+                                                                                                                                              Scopuri de demonstrat: P42(4, 7, 10)
+                                                                                                                                                Scop curent P42(4, 7, 10)
+                                                                                                                                                  P42(4, 7, 10) este un fapt
+                                                                                                                                                    Scop curent P43(4, 7, 10)
+                                                                                                                                                    Incercam [ P43(4, 7, 10) : P44(4, 7, 10) ]
+                                                                                                                                                    Scopuri de demonstrat: P44(4, 7, 10)
+                                                                                                                                                      Scop curent P44(4, 7, 10)
+                                                                                                                                                        P44(4, 7, 10) este un fapt
+                                                                                                                                                          Scop curent P45(4)
+                                                                                                                                                          Incercam [ P45(4) : P46(4), P47(4, ?x1, ?x2), P48(4), P49(4, ?x1), P50(4, ?x1), P51(4, ?x1) ]
+                                                                                                                                                          Scopuri de demonstrat: P46(4), P47(4, ?x1, ?x2), P48(4), P49(4, ?x1), P50(4, ?x1), P51(4, ?x1)
+                                                                                                                                                            Scop curent P46(4)
+                                                                                                                                                              P46(4) este un fapt
+                                                                                                                                                                Scop curent P47(4, 7, 10)
+                                                                                                                                                                  P47(4, 7, 10) este un fapt
+                                                                                                                                                                    Scop curent P48(4)
+                                                                                                                                                                      P48(4) este un fapt
+                                                                                                                                                                        Scop curent P49(4, 7)
+                                                                                                                                                                          P49(4, 7) este un fapt
+                                                                                                                                                                            Scop curent P50(4, 7)
+                                                                                                                                                                              P50(4, 7) este un fapt
+                                                                                                                                                                                Scop curent P51(4, 7)
+                                                                                                                                                                                  P51(4, 7) este un fapt
+                                                                                                                                                                                    Scop curent P52(4)
+                                                                                                                                                                                    Incercam [ P52(4) : P53(4), P54(4), P55(4, ?x1, ?x2), P56(4), P57(4, ?x1, ?x2), P58(4, ?x1) ]
+                                                                                                                                                                                    Scopuri de demonstrat: P53(4), P54(4), P55(4, ?x1, ?x2), P56(4), P57(4, ?x1, ?x2), P58(4, ?x1)
+                                                                                                                                                                                      Scop curent P53(4)
+                                                                                                                                                                                        P53(4) este un fapt
+                                                                                                                                                                                          Scop curent P54(4)
+                                                                                                                                                                                            P54(4) este un fapt
+                                                                                                                                                                                              Scop curent P55(4, 7, 10)
+                                                                                                                                                                                                P55(4, 7, 10) este un fapt
+                                                                                                                                                                                                  Scop curent P56(4)
+                                                                                                                                                                                                    P56(4) este un fapt
+                                                                                                                                                                                                      Scop curent P57(4, 7, 10)
+                                                                                                                                                                                                        P57(4, 7, 10) este un fapt
+                                                                                                                                                                                                          Scop curent P58(4, 7)
+                                                                                                                                                                                                            P58(4, 7) este un fapt
+                                                                                                                                                                                                              Scop curent P59(4, 7)
+                                                                                                                                                                                                              Incercam [ P59(4, 7) : P60(4, 7), P61(4), P62(4, 7) ]
+                                                                                                                                                                                                              Scopuri de demonstrat: P60(4, 7), P61(4), P62(4, 7)
+                                                                                                                                                                                                                Scop curent P60(4, 7)
+                                                                                                                                                                                                                  P60(4, 7) este un fapt
+                                                                                                                                                                                                                    Scop curent P61(4)
+                                                                                                                                                                                                                      P61(4) este un fapt
+                                                                                                                                                                                                                        Scop curent P62(4, 7)
+                                                                                                                                                                                                                          P62(4, 7) este un fapt
+                                                                                                                                                                                                                            Scop curent P63(4, 7)
+                                                                                                                                                                                                                              P63(4, 7) este un fapt
+                                                                                                                                                                                                                              ***************
+                                                                                                                                                                                                                              Solution:
+                                                                                                                                                                                                                                x0 : 4
+                                                                                                                                                                                                                                x1 : 7
+                                                                                                                                                                                                                                x2 : 10
+          P3(2920) este un fapt
+            Scop curent P4(2920, ?x1, ?x2)
+          P3(182) este un fapt
+            Scop curent P4(182, ?x1, ?x2)
+              P4(182, 363, 544) este un fapt
+                Scop curent P5(182, 363, 544)
+                  P5(182, 363, 544) este un fapt
+                    Scop curent P6(182)
+                      P6(182) este un fapt
+                        Scop curent P7(182, 363)
+                        Incercam [ P7(182, 363) : P8(182, 363), P9(182, 363), P10(182), P11(182) ]
+                        Scopuri de demonstrat: P8(182, 363), P9(182, 363), P10(182), P11(182)
+                          Scop curent P8(182, 363)
+                            P8(182, 363) este un fapt
+                              Scop curent P9(182, 363)
+                                P9(182, 363) este un fapt
+                                  Scop curent P10(182)
+                                    P10(182) este un fapt
+                                      Scop curent P11(182)
+                                        P11(182) este un fapt
+                                          Scop curent P12(182, 363)
+                                          Incercam [ P12(182, 363) : P13(182, 363), P19(182, 363, ?x2), P21(182, 363, ?x2), P22(182, 363, ?x2), P29(182, 363, ?x2), P31(182, 363) ]
+                                          Scopuri de demonstrat: P13(182, 363), P19(182, 363, ?x2), P21(182, 363, ?x2), P22(182, 363, ?x2), P29(182, 363, ?x2), P31(182, 363)
+                                            Scop curent P13(182, 363)
+                                            Incercam [ P13(182, 363) : P14(182, 363), P15(182, 363, ?x2), P16(182), P17(182), P18(182, 363, ?x2) ]
+                                            Scopuri de demonstrat: P14(182, 363), P15(182, 363, ?x2), P16(182), P17(182), P18(182, 363, ?x2)
+                                              Scop curent P14(182, 363)
+                                                P14(182, 363) este un fapt
+                                                  Scop curent P15(182, 363, 544)
+                                                    P15(182, 363, 544) este un fapt
+                                                      Scop curent P16(182)
+                                                        P16(182) este un fapt
+                                                          Scop curent P17(182)
+                                                            P17(182) este un fapt
+                                                              Scop curent P18(182, 363, 544)
+                                                                P18(182, 363, 544) este un fapt
+                                                                  Scop curent P19(182, 363, 544)
+                                                                  Incercam [ P19(182, 363, 544) : P20(182, 363, 544) ]
+                                                                  Scopuri de demonstrat: P20(182, 363, 544)
+                                                                    Scop curent P20(182, 363, 544)
+                                                                      P20(182, 363, 544) este un fapt
+                                                                        Scop curent P21(182, 363, 544)
+                                                                          P21(182, 363, 544) este un fapt
+                                                                            Scop curent P22(182, 363, 544)
+                                                                            Incercam [ P22(182, 363, 544) : P23(182, 363, 544), P24(182, 363), P25(182, 363, 544), P26(182, 363, 544), P27(182), P28(182) ]
+                                                                            Scopuri de demonstrat: P23(182, 363, 544), P24(182, 363), P25(182, 363, 544), P26(182, 363, 544), P27(182), P28(182)
+                                                                              Scop curent P23(182, 363, 544)
+                                                                                P23(182, 363, 544) este un fapt
+                                                                                  Scop curent P24(182, 363)
+                                                                                    P24(182, 363) este un fapt
+                                                                                      Scop curent P25(182, 363, 544)
+                                                                                        P25(182, 363, 544) este un fapt
+                                                                                          Scop curent P26(182, 363, 544)
+                                                                                            P26(182, 363, 544) este un fapt
+                                                                                              Scop curent P27(182)
+                                                                                                P27(182) este un fapt
+                                                                                                  Scop curent P28(182)
+                                                                                                    P28(182) este un fapt
+                                                                                                      Scop curent P29(182, 363, 544)
+                                                                                                      Incercam [ P29(182, 363, 544) : P30(182, 363, 544) ]
+                                                                                                      Scopuri de demonstrat: P30(182, 363, 544)
+                                                                                                        Scop curent P30(182, 363, 544)
+                                                                                                          P30(182, 363, 544) este un fapt
+                                                                                                            Scop curent P31(182, 363)
+                                                                                                            Incercam [ P31(182, 363) : P32(182, 363) ]
+                                                                                                            Scopuri de demonstrat: P32(182, 363)
+                                                                                                              Scop curent P32(182, 363)
+                                                                                                                P32(182, 363) este un fapt
+                                                                                                                  Scop curent P33(182, 363, 544)
+                                                                                                                  Incercam [ P33(182, 363, 544) : P34(182, 363, 544), P41(182, 363, 544), P43(182, 363, 544), P45(182), P52(182), P59(182, 363) ]
+                                                                                                                  Scopuri de demonstrat: P34(182, 363, 544), P41(182, 363, 544), P43(182, 363, 544), P45(182), P52(182), P59(182, 363)
+                                                                                                                    Scop curent P34(182, 363, 544)
+                                                                                                                    Incercam [ P34(182, 363, 544) : P35(182, 363, 544), P36(182, 363), P37(182), P38(182), P39(182), P40(182, 363, 544) ]
+                                                                                                                    Scopuri de demonstrat: P35(182, 363, 544), P36(182, 363), P37(182), P38(182), P39(182), P40(182, 363, 544)
+                                                                                                                      Scop curent P35(182, 363, 544)
+                                                                                                                        P35(182, 363, 544) este un fapt
+                                                                                                                          Scop curent P36(182, 363)
+                                                                                                                            P36(182, 363) este un fapt
+                                                                                                                              Scop curent P37(182)
+                                                                                                                                P37(182) este un fapt
+                                                                                                                                  Scop curent P38(182)
+                                                                                                                                    P38(182) este un fapt
+                                                                                                                                      Scop curent P39(182)
+                                                                                                                                        P39(182) este un fapt
+                                                                                                                                          Scop curent P40(182, 363, 544)
+                                                                                                                                            P40(182, 363, 544) este un fapt
+                                                                                                                                              Scop curent P41(182, 363, 544)
+                                                                                                                                              Incercam [ P41(182, 363, 544) : P42(182, 363, 544) ]
+                                                                                                                                              Scopuri de demonstrat: P42(182, 363, 544)
+                                                                                                                                                Scop curent P42(182, 363, 544)
+                                                                                                                                                  P42(182, 363, 544) este un fapt
+                                                                                                                                                    Scop curent P43(182, 363, 544)
+                                                                                                                                                    Incercam [ P43(182, 363, 544) : P44(182, 363, 544) ]
+                                                                                                                                                    Scopuri de demonstrat: P44(182, 363, 544)
+                                                                                                                                                      Scop curent P44(182, 363, 544)
+                                                                                                                                                        P44(182, 363, 544) este un fapt
+                                                                                                                                                          Scop curent P45(182)
+                                                                                                                                                          Incercam [ P45(182) : P46(182), P47(182, ?x1, ?x2), P48(182), P49(182, ?x1), P50(182, ?x1), P51(182, ?x1) ]
+                                                                                                                                                          Scopuri de demonstrat: P46(182), P47(182, ?x1, ?x2), P48(182), P49(182, ?x1), P50(182, ?x1), P51(182, ?x1)
+                                                                                                                                                            Scop curent P46(182)
+                                                                                                                                                              P46(182) este un fapt
+                                                                                                                                                                Scop curent P47(182, 363, 544)
+                                                                                                                                                                  P47(182, 363, 544) este un fapt
+                                                                                                                                                                    Scop curent P48(182)
+                                                                                                                                                                      P48(182) este un fapt
+                                                                                                                                                                        Scop curent P49(182, 363)
+                                                                                                                                                                          P49(182, 363) este un fapt
+                                                                                                                                                                            Scop curent P50(182, 363)
+                                                                                                                                                                              P50(182, 363) este un fapt
+                                                                                                                                                                                Scop curent P51(182, 363)
+                                                                                                                                                                                  P51(182, 363) este un fapt
+                                                                                                                                                                                    Scop curent P52(182)
+                                                                                                                                                                                    Incercam [ P52(182) : P53(182), P54(182), P55(182, ?x1, ?x2), P56(182), P57(182, ?x1, ?x2), P58(182, ?x1) ]
+                                                                                                                                                                                    Scopuri de demonstrat: P53(182), P54(182), P55(182, ?x1, ?x2), P56(182), P57(182, ?x1, ?x2), P58(182, ?x1)
+                                                                                                                                                                                      Scop curent P53(182)
+                                                                                                                                                                                        P53(182) este un fapt
+                                                                                                                                                                                          Scop curent P54(182)
+                                                                                                                                                                                            P54(182) este un fapt
+                                                                                                                                                                                              Scop curent P55(182, 363, 544)
+                                                                                                                                                                                                P55(182, 363, 544) este un fapt
+                                                                                                                                                                                                  Scop curent P56(182)
+                                                                                                                                                                                                    P56(182) este un fapt
+                                                                                                                                                                                                      Scop curent P57(182, 363, 544)
+                                                                                                                                                                                                        P57(182, 363, 544) este un fapt
+                                                                                                                                                                                                          Scop curent P58(182, 363)
+                                                                                                                                                                                                            P58(182, 363) este un fapt
+                                                                                                                                                                                                              Scop curent P59(182, 363)
+                                                                                                                                                                                                              Incercam [ P59(182, 363) : P60(182, 363), P61(182), P62(182, 363) ]
+                                                                                                                                                                                                              Scopuri de demonstrat: P60(182, 363), P61(182), P62(182, 363)
+                                                                                                                                                                                                                Scop curent P60(182, 363)
+                                                                                                                                                                                                                  P60(182, 363) este un fapt
+                                                                                                                                                                                                                    Scop curent P61(182)
+                                                                                                                                                                                                                      P61(182) este un fapt
+                                                                                                                                                                                                                        Scop curent P62(182, 363)
+                                                                                                                                                                                                                          P62(182, 363) este un fapt
+                                                                                                                                                                                                                            Scop curent P63(182, 363)
+                                                                                                                                                                                                                              P63(182, 363) este un fapt
+                                                                                                                                                                                                                              ***************
+                                                                                                                                                                                                                              Solution:
+                                                                                                                                                                                                                                x0 : 182
+                                                                                                                                                                                                                                x1 : 363
+                                                                                                                                                                                                                                x2 : 544
+          P3(2443) este un fapt
+            Scop curent P4(2443, ?x1, ?x2)
+Gata
+Solution 0 = x0 : ('CONST', '4')
+Solution 1 = x0 : ('CONST', '182')
+

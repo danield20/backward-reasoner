@@ -1,0 +1,89 @@
+('ATOM', 'EchipaCursa', [('CONST', 'SteauaNordului')]) 1.0
+('ATOM', 'EchipaCursa', [('CONST', 'FuriosSiIute')]) 1.0
+('ATOM', 'Finantator', [('CONST', 'FuriosSiIute'), ('CONST', 'Gigel')]) 1.0
+('ATOM', 'Finantator', [('CONST', 'SteauaNordului'), ('CONST', 'Becali')]) 1.0
+('ATOM', 'Combustibil', [('CONST', 'Texaco')]) 1.0
+('ATOM', 'Combustibil', [('CONST', 'Shell')]) 1.0
+('ATOM', 'FolosesteCombustibil', [('CONST', 'FuriosSiIute'), ('CONST', 'Shell')]) 1.0
+('ATOM', 'Calitate', [('CONST', 'Texaco'), ('CONST', 'Buna')]) 1.0
+('ATOM', 'Zgarcit', [('CONST', 'Gigel')]) 1.0
+('ATOM', 'Generos', [('CONST', 'Becali')]) 1.0
+('V', 'V', [('ATOM', 'CastigaCursa', [('VAR', 'echipa')]), ('~', '~', [('ATOM', 'EchipaCursa', [('VAR', 'echipa')])]), ('~', '~', [('ATOM', 'Combustibil', [('VAR', 'combustibil')])]), ('~', '~', [('ATOM', 'FolosesteCombustibil', [('VAR', 'echipa'), ('VAR', 'combustibil')])]), ('~', '~', [('ATOM', 'Calitate', [('VAR', 'combustibil'), ('CONST', 'Buna')])])]) 1.0
+('V', 'V', [('ATOM', 'PierdeCursa', [('VAR', 'echipa')]), ('~', '~', [('ATOM', 'EchipaCursa', [('VAR', 'echipa')])]), ('~', '~', [('ATOM', 'Combustibil', [('VAR', 'combustibil')])]), ('~', '~', [('ATOM', 'FolosesteCombustibil', [('VAR', 'echipa'), ('VAR', 'combustibil')])]), ('~', '~', [('ATOM', 'Calitate', [('VAR', 'combustibil'), ('CONST', 'Proasta')])])]) 1.0
+('V', 'V', [('ATOM', 'FolosesteCombustibil', [('VAR', 'echipa'), ('VAR', 'combustibil')]), ('~', '~', [('ATOM', 'Finantator', [('VAR', 'echipa'), ('VAR', 'finantator')])]), ('~', '~', [('ATOM', 'CumparaCombustibil', [('VAR', 'finantator'), ('VAR', 'combustibil')])])]) 1.0
+('V', 'V', [('ATOM', 'CumparaCombustibil', [('VAR', 'finantator'), ('VAR', 'combustibil')]), ('~', '~', [('ATOM', 'Generos', [('VAR', 'finantator')])]), ('~', '~', [('ATOM', 'Combustibil', [('VAR', 'combustibil')])]), ('~', '~', [('ATOM', 'Calitate', [('VAR', 'combustibil'), ('CONST', 'Buna')])])]) 1.0
+('V', 'V', [('ATOM', 'Calitate', [('VAR', 'combustibil'), ('CONST', 'Proasta')]), ('~', '~', [('ATOM', 'Combustibil', [('VAR', 'combustibil')])]), ('~', '~', [('ATOM', 'IndoitCuApa', [('VAR', 'combustibil')])])]) 1.0
+('V', 'V', [('ATOM', 'IndoitCuApa', [('VAR', 'combustibil')]), ('~', '~', [('ATOM', 'FolosesteCombustibil', [('VAR', 'echipa'), ('VAR', 'combustibil')])]), ('~', '~', [('ATOM', 'SubFinantata', [('VAR', 'echipa')])])]) 1.0
+('V', 'V', [('ATOM', 'SubFinantata', [('VAR', 'echipa')]), ('~', '~', [('ATOM', 'Finantator', [('VAR', 'echipa'), ('VAR', 'finantator')])]), ('~', '~', [('ATOM', 'Zgarcit', [('VAR', 'finantator')])])]) 1.0
+
+Scopul de demonstrat CastigaCursa(SteauaNordului)
+  Scop curent CastigaCursa(SteauaNordului)
+  Incercam [ CastigaCursa(SteauaNordului) : EchipaCursa(SteauaNordului), Combustibil(?combustibil), FolosesteCombustibil(SteauaNordului, ?combustibil), Calitate(?combustibil, Buna) ]
+  Scopuri de demonstrat: EchipaCursa(SteauaNordului), Combustibil(?combustibil), FolosesteCombustibil(SteauaNordului, ?combustibil), Calitate(?combustibil, Buna)
+    Scop curent EchipaCursa(SteauaNordului)
+      EchipaCursa(SteauaNordului) este un fapt
+        Scop curent Combustibil(?combustibil)
+          Combustibil(Texaco) este un fapt
+            Scop curent FolosesteCombustibil(SteauaNordului, Texaco)
+            Incercam [ FolosesteCombustibil(SteauaNordului, Texaco) : Finantator(SteauaNordului, ?finantator), CumparaCombustibil(?finantator, Texaco) ]
+            Scopuri de demonstrat: Finantator(SteauaNordului, ?finantator), CumparaCombustibil(?finantator, Texaco)
+              Scop curent Finantator(SteauaNordului, ?finantator)
+                Finantator(SteauaNordului, Becali) este un fapt
+                  Scop curent CumparaCombustibil(Becali, Texaco)
+                  Incercam [ CumparaCombustibil(Becali, Texaco) : Generos(Becali), Combustibil(Texaco), Calitate(Texaco, Buna) ]
+                  Scopuri de demonstrat: Generos(Becali), Combustibil(Texaco), Calitate(Texaco, Buna)
+                    Scop curent Generos(Becali)
+                      Generos(Becali) este un fapt
+                        Scop curent Combustibil(Texaco)
+                          Combustibil(Texaco) este un fapt
+                            Scop curent Calitate(Texaco, Buna)
+                              Calitate(Texaco, Buna) este un fapt
+                                Scop curent Calitate(Texaco, Buna)
+                                  Calitate(Texaco, Buna) este un fapt
+                                  ***************
+                                    CastigaCursa(SteauaNordului) is true
+Gata
+CastigaCursa(SteauaNordului) is True
+
+Scopul de demonstrat PierdeCursa(FuriosSiIute)
+  Scop curent PierdeCursa(FuriosSiIute)
+  Incercam [ PierdeCursa(FuriosSiIute) : EchipaCursa(FuriosSiIute), Combustibil(?combustibil), FolosesteCombustibil(FuriosSiIute, ?combustibil), Calitate(?combustibil, Proasta) ]
+  Scopuri de demonstrat: EchipaCursa(FuriosSiIute), Combustibil(?combustibil), FolosesteCombustibil(FuriosSiIute, ?combustibil), Calitate(?combustibil, Proasta)
+    Scop curent EchipaCursa(FuriosSiIute)
+      EchipaCursa(FuriosSiIute) este un fapt
+        Scop curent Combustibil(?combustibil)
+          Combustibil(Texaco) este un fapt
+            Scop curent FolosesteCombustibil(FuriosSiIute, Texaco)
+            Incercam [ FolosesteCombustibil(FuriosSiIute, Texaco) : Finantator(FuriosSiIute, ?finantator), CumparaCombustibil(?finantator, Texaco) ]
+            Scopuri de demonstrat: Finantator(FuriosSiIute, ?finantator), CumparaCombustibil(?finantator, Texaco)
+              Scop curent Finantator(FuriosSiIute, ?finantator)
+                Finantator(FuriosSiIute, Gigel) este un fapt
+                  Scop curent CumparaCombustibil(Gigel, Texaco)
+                  Incercam [ CumparaCombustibil(Gigel, Texaco) : Generos(Gigel), Combustibil(Texaco), Calitate(Texaco, Buna) ]
+                  Scopuri de demonstrat: Generos(Gigel), Combustibil(Texaco), Calitate(Texaco, Buna)
+                    Scop curent Generos(Gigel)
+          Combustibil(Shell) este un fapt
+            Scop curent FolosesteCombustibil(FuriosSiIute, Shell)
+              FolosesteCombustibil(FuriosSiIute, Shell) este un fapt
+                Scop curent Calitate(Shell, Proasta)
+                Incercam [ Calitate(Shell, Proasta) : Combustibil(Shell), IndoitCuApa(Shell) ]
+                Scopuri de demonstrat: Combustibil(Shell), IndoitCuApa(Shell)
+                  Scop curent Combustibil(Shell)
+                    Combustibil(Shell) este un fapt
+                      Scop curent IndoitCuApa(Shell)
+                      Incercam [ IndoitCuApa(Shell) : FolosesteCombustibil(?echipa, Shell), SubFinantata(?echipa) ]
+                      Scopuri de demonstrat: FolosesteCombustibil(?echipa, Shell), SubFinantata(?echipa)
+                        Scop curent FolosesteCombustibil(?echipa, Shell)
+                          FolosesteCombustibil(FuriosSiIute, Shell) este un fapt
+                            Scop curent SubFinantata(FuriosSiIute)
+                            Incercam [ SubFinantata(FuriosSiIute) : Finantator(FuriosSiIute, ?finantator), Zgarcit(?finantator) ]
+                            Scopuri de demonstrat: Finantator(FuriosSiIute, ?finantator), Zgarcit(?finantator)
+                              Scop curent Finantator(FuriosSiIute, ?finantator)
+                                Finantator(FuriosSiIute, Gigel) este un fapt
+                                  Scop curent Zgarcit(Gigel)
+                                    Zgarcit(Gigel) este un fapt
+                                    ***************
+                                      PierdeCursa(FuriosSiIute) is true
+Gata
+PierdeCursa(FuriosSiIute) is True
+

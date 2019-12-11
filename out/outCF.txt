@@ -1,0 +1,93 @@
+('ATOM', 'simptom', [('CONST', 'febra')]) 1.0
+('ATOM', 'simptom', [('CONST', 'nasInfundat')]) 0.9
+('ATOM', 'simptom', [('CONST', 'stareProasta')]) 0.7
+('ATOM', 'simptom', [('CONST', 'durereBurta')]) 0.1
+('V', 'V', [('ATOM', 'diagnostic', [('CONST', 'viroza')]), ('~', '~', [('ATOM', 'simptom', [('CONST', 'stareProasta')])])]) 0.5
+('V', 'V', [('ATOM', 'diagnostic', [('CONST', 'viroza')]), ('~', '~', [('ATOM', 'simptom', [('CONST', 'febra')])])]) 0.7
+('V', 'V', [('ATOM', 'infectie', [('CONST', 'respirator')]), ('~', '~', [('ATOM', 'simptom', [('CONST', 'nasInfundat')])])]) 0.8
+('V', 'V', [('ATOM', 'infectie', [('CONST', 'digestiv')]), ('~', '~', [('ATOM', 'simptom', [('CONST', 'durereBurta')])])]) 0.8
+('V', 'V', [('ATOM', 'infectie', [('CONST', 'nervos')]), ('~', '~', [('ATOM', 'simptom', [('CONST', 'tulburariOculare')])])]) 0.8
+('V', 'V', [('ATOM', 'diagnosticViroza', [('VAR', 'Sistem')]), ('~', '~', [('ATOM', 'infectie', [('VAR', 'Sistem')])]), ('~', '~', [('ATOM', 'diagnostic', [('CONST', 'viroza')])])]) 0.9
+
+Scopul de demonstrat diagnostic(viroza)
+  Scop curent diagnostic(viroza)
+  Incercam [ diagnostic(viroza) : simptom(febra) ]
+  Scopuri de demonstrat: simptom(febra)
+    Scop curent simptom(febra)
+      simptom(febra) este un fapt
+      ***************
+        diagnostic(viroza) is true
+  Incercam [ diagnostic(viroza) : simptom(stareProasta) ]
+  Scopuri de demonstrat: simptom(stareProasta)
+    Scop curent simptom(stareProasta)
+      simptom(stareProasta) este un fapt
+      ***************
+        diagnostic(viroza) is true
+Gata
+diagnostic(viroza) is True
+Coeficient: 0.805
+
+Scopul de demonstrat diagnosticViroza(respirator)
+  Scop curent diagnosticViroza(respirator)
+  Incercam [ diagnosticViroza(respirator) : infectie(respirator), diagnostic(viroza) ]
+  Scopuri de demonstrat: infectie(respirator), diagnostic(viroza)
+    Scop curent infectie(respirator)
+    Incercam [ infectie(respirator) : simptom(nasInfundat) ]
+    Scopuri de demonstrat: simptom(nasInfundat)
+      Scop curent simptom(nasInfundat)
+        simptom(nasInfundat) este un fapt
+          Scop curent diagnostic(viroza)
+          Incercam [ diagnostic(viroza) : simptom(febra) ]
+          Scopuri de demonstrat: simptom(febra)
+            Scop curent simptom(febra)
+              simptom(febra) este un fapt
+              ***************
+                diagnosticViroza(respirator) is true
+          Incercam [ diagnostic(viroza) : simptom(stareProasta) ]
+          Scopuri de demonstrat: simptom(stareProasta)
+            Scop curent simptom(stareProasta)
+              simptom(stareProasta) este un fapt
+              ***************
+                diagnosticViroza(respirator) is true
+Gata
+diagnosticViroza(respirator) is True
+Coeficient: 0.648
+
+Scopul de demonstrat diagnosticViroza(digestiv)
+  Scop curent diagnosticViroza(digestiv)
+  Incercam [ diagnosticViroza(digestiv) : infectie(digestiv), diagnostic(viroza) ]
+  Scopuri de demonstrat: infectie(digestiv), diagnostic(viroza)
+    Scop curent infectie(digestiv)
+    Incercam [ infectie(digestiv) : simptom(durereBurta) ]
+    Scopuri de demonstrat: simptom(durereBurta)
+      Scop curent simptom(durereBurta)
+        simptom(durereBurta) este un fapt
+          Scop curent diagnostic(viroza)
+          Incercam [ diagnostic(viroza) : simptom(febra) ]
+          Scopuri de demonstrat: simptom(febra)
+            Scop curent simptom(febra)
+              simptom(febra) este un fapt
+              ***************
+                diagnosticViroza(digestiv) is true
+          Incercam [ diagnostic(viroza) : simptom(stareProasta) ]
+          Scopuri de demonstrat: simptom(stareProasta)
+            Scop curent simptom(stareProasta)
+              simptom(stareProasta) este un fapt
+              ***************
+                diagnosticViroza(digestiv) is true
+Gata
+diagnosticViroza(digestiv) is True
+Coeficient: 0.072
+
+Scopul de demonstrat diagnosticViroza(nervos)
+  Scop curent diagnosticViroza(nervos)
+  Incercam [ diagnosticViroza(nervos) : infectie(nervos), diagnostic(viroza) ]
+  Scopuri de demonstrat: infectie(nervos), diagnostic(viroza)
+    Scop curent infectie(nervos)
+    Incercam [ infectie(nervos) : simptom(tulburariOculare) ]
+    Scopuri de demonstrat: simptom(tulburariOculare)
+      Scop curent simptom(tulburariOculare)
+  diagnosticViroza(nervos) is false
+Gata
+diagnosticViroza(nervos) is false
+

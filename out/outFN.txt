@@ -1,0 +1,195 @@
+('ATOM', 'size', [('CONST', 'AB'), ('CONST', '3')]) 1.0
+('ATOM', 'size', [('CONST', 'BC'), ('CONST', '4')]) 1.0
+('ATOM', 'size', [('CONST', 'AC'), ('CONST', '5')]) 1.0
+('ATOM', 'size', [('CONST', 'AD'), ('CONST', '4')]) 1.0
+('ATOM', 'size', [('CONST', 'CD'), ('CONST', '3')]) 1.0
+('ATOM', 'size', [('CONST', 'BE'), ('CONST', '3')]) 1.0
+('ATOM', 'size', [('CONST', 'CE'), ('CONST', '3')]) 1.0
+('ATOM', 'size', [('CONST', 'AF'), ('CONST', '2')]) 1.0
+('ATOM', 'size', [('CONST', 'BF'), ('CONST', '1')]) 1.0
+('ATOM', 'zero', [('CONST', '0')]) 1.0
+('ATOM', 'is', [('VAR', 'X'), ('VAR', 'X')]) 1.0
+('ATOM', 'checks_out', [('CONST', '1')]) 1.0
+('ATOM', 'checks_out', [('CONST', '2')]) 1.0
+('ATOM', 'checks_out', [('CONST', '3')]) 1.0
+('V', 'V', [('ATOM', 'triangle', [('VAR', 'T')]), ('~', '~', [('ATOM', 'size', [('FUNC', 'get', [('VAR', 'T'), ('CONST', '0')]), ('VAR', 'LA')])]), ('~', '~', [('ATOM', 'size', [('FUNC', 'get', [('VAR', 'T'), ('CONST', '1')]), ('VAR', 'LB')])]), ('~', '~', [('ATOM', 'size', [('FUNC', 'get', [('VAR', 'T'), ('CONST', '2')]), ('VAR', 'LC')])]), ('~', '~', [('ATOM', 'checks_out', [('FUNC', 'compute_triangle', [('VAR', 'LA'), ('VAR', 'LB'), ('VAR', 'LC')])])])]) 1.0
+('V', 'V', [('ATOM', 'dreptunghic', [('VAR', 'T')]), ('~', '~', [('ATOM', 'size', [('FUNC', 'get', [('VAR', 'T'), ('CONST', '0')]), ('VAR', 'LA')])]), ('~', '~', [('ATOM', 'size', [('FUNC', 'get', [('VAR', 'T'), ('CONST', '1')]), ('VAR', 'LB')])]), ('~', '~', [('ATOM', 'size', [('FUNC', 'get', [('VAR', 'T'), ('CONST', '2')]), ('VAR', 'LC')])]), ('~', '~', [('ATOM', 'is', [('FUNC', 'getShortest', [('VAR', 'LA'), ('VAR', 'LB'), ('VAR', 'LC')]), ('VAR', 'LS')])]), ('~', '~', [('ATOM', 'is', [('FUNC', 'getMiddle', [('VAR', 'LA'), ('VAR', 'LB'), ('VAR', 'LC')]), ('VAR', 'LM')])]), ('~', '~', [('ATOM', 'is', [('FUNC', 'getLongest', [('VAR', 'LA'), ('VAR', 'LB'), ('VAR', 'LC')]), ('VAR', 'LL')])]), ('~', '~', [('ATOM', 'zero', [('FUNC', 'compute_pitagoras', [('VAR', 'LS'), ('VAR', 'LM'), ('VAR', 'LL')])])])]) 1.0
+
+Scopul de demonstrat triangle(ABC)
+  Scop curent triangle(ABC)
+  Incercam [ triangle(ABC) : size(get[ABC,0], ?LA), size(get[ABC,1], ?LB), size(get[ABC,2], ?LC), checks_out(compute_triangle[?LA,?LB,?LC]) ]
+  Scopuri de demonstrat: size(get[ABC,0], ?LA), size(get[ABC,1], ?LB), size(get[ABC,2], ?LC), checks_out(compute_triangle[?LA,?LB,?LC])
+    Scop curent size(get[ABC,0], ?LA)
+      size(AB, 3) este un fapt
+        Scop curent size(get[ABC,1], ?LB)
+          size(BC, 4) este un fapt
+            Scop curent size(get[ABC,2], ?LC)
+              size(AC, 5) este un fapt
+                Scop curent checks_out(compute_triangle[3,4,5])
+                  checks_out(2) este un fapt
+                  ***************
+                    triangle(ABC) is true
+Gata
+triangle(ABC) is True
+
+Scopul de demonstrat triangle(BCE)
+  Scop curent triangle(BCE)
+  Incercam [ triangle(BCE) : size(get[BCE,0], ?LA), size(get[BCE,1], ?LB), size(get[BCE,2], ?LC), checks_out(compute_triangle[?LA,?LB,?LC]) ]
+  Scopuri de demonstrat: size(get[BCE,0], ?LA), size(get[BCE,1], ?LB), size(get[BCE,2], ?LC), checks_out(compute_triangle[?LA,?LB,?LC])
+    Scop curent size(get[BCE,0], ?LA)
+      size(BC, 4) este un fapt
+        Scop curent size(get[BCE,1], ?LB)
+          size(CE, 3) este un fapt
+            Scop curent size(get[BCE,2], ?LC)
+              size(BE, 3) este un fapt
+                Scop curent checks_out(compute_triangle[4,3,3])
+                  checks_out(2) este un fapt
+                  ***************
+                    triangle(BCE) is true
+Gata
+triangle(BCE) is True
+
+Scopul de demonstrat triangle(ACD)
+  Scop curent triangle(ACD)
+  Incercam [ triangle(ACD) : size(get[ACD,0], ?LA), size(get[ACD,1], ?LB), size(get[ACD,2], ?LC), checks_out(compute_triangle[?LA,?LB,?LC]) ]
+  Scopuri de demonstrat: size(get[ACD,0], ?LA), size(get[ACD,1], ?LB), size(get[ACD,2], ?LC), checks_out(compute_triangle[?LA,?LB,?LC])
+    Scop curent size(get[ACD,0], ?LA)
+      size(AC, 5) este un fapt
+        Scop curent size(get[ACD,1], ?LB)
+          size(CD, 3) este un fapt
+            Scop curent size(get[ACD,2], ?LC)
+              size(AD, 4) este un fapt
+                Scop curent checks_out(compute_triangle[5,3,4])
+                  checks_out(2) este un fapt
+                  ***************
+                    triangle(ACD) is true
+Gata
+triangle(ACD) is True
+
+Scopul de demonstrat triangle(ABF)
+  Scop curent triangle(ABF)
+  Incercam [ triangle(ABF) : size(get[ABF,0], ?LA), size(get[ABF,1], ?LB), size(get[ABF,2], ?LC), checks_out(compute_triangle[?LA,?LB,?LC]) ]
+  Scopuri de demonstrat: size(get[ABF,0], ?LA), size(get[ABF,1], ?LB), size(get[ABF,2], ?LC), checks_out(compute_triangle[?LA,?LB,?LC])
+    Scop curent size(get[ABF,0], ?LA)
+      size(AB, 3) este un fapt
+        Scop curent size(get[ABF,1], ?LB)
+          size(BF, 1) este un fapt
+            Scop curent size(get[ABF,2], ?LC)
+              size(AF, 2) este un fapt
+                Scop curent checks_out(compute_triangle[3,1,2])
+  triangle(ABF) is false
+Gata
+triangle(ABF) is false
+
+Scopul de demonstrat triangle(ABD)
+  Scop curent triangle(ABD)
+  Incercam [ triangle(ABD) : size(get[ABD,0], ?LA), size(get[ABD,1], ?LB), size(get[ABD,2], ?LC), checks_out(compute_triangle[?LA,?LB,?LC]) ]
+  Scopuri de demonstrat: size(get[ABD,0], ?LA), size(get[ABD,1], ?LB), size(get[ABD,2], ?LC), checks_out(compute_triangle[?LA,?LB,?LC])
+    Scop curent size(get[ABD,0], ?LA)
+      size(AB, 3) este un fapt
+        Scop curent size(get[ABD,1], ?LB)
+  triangle(ABD) is false
+Gata
+triangle(ABD) is false
+
+Scopul de demonstrat triangle(ABE)
+  Scop curent triangle(ABE)
+  Incercam [ triangle(ABE) : size(get[ABE,0], ?LA), size(get[ABE,1], ?LB), size(get[ABE,2], ?LC), checks_out(compute_triangle[?LA,?LB,?LC]) ]
+  Scopuri de demonstrat: size(get[ABE,0], ?LA), size(get[ABE,1], ?LB), size(get[ABE,2], ?LC), checks_out(compute_triangle[?LA,?LB,?LC])
+    Scop curent size(get[ABE,0], ?LA)
+      size(AB, 3) este un fapt
+        Scop curent size(get[ABE,1], ?LB)
+          size(BE, 3) este un fapt
+            Scop curent size(get[ABE,2], ?LC)
+  triangle(ABE) is false
+Gata
+triangle(ABE) is false
+
+Scopul de demonstrat dreptunghic(ABC)
+  Scop curent dreptunghic(ABC)
+  Incercam [ dreptunghic(ABC) : size(get[ABC,0], ?LA), size(get[ABC,1], ?LB), size(get[ABC,2], ?LC), is(getShortest[?LA,?LB,?LC], ?LS), is(getMiddle[?LA,?LB,?LC], ?LM), is(getLongest[?LA,?LB,?LC], ?LL), zero(compute_pitagoras[?LS,?LM,?LL]) ]
+  Scopuri de demonstrat: size(get[ABC,0], ?LA), size(get[ABC,1], ?LB), size(get[ABC,2], ?LC), is(getShortest[?LA,?LB,?LC], ?LS), is(getMiddle[?LA,?LB,?LC], ?LM), is(getLongest[?LA,?LB,?LC], ?LL), zero(compute_pitagoras[?LS,?LM,?LL])
+    Scop curent size(get[ABC,0], ?LA)
+      size(AB, 3) este un fapt
+        Scop curent size(get[ABC,1], ?LB)
+          size(BC, 4) este un fapt
+            Scop curent size(get[ABC,2], ?LC)
+              size(AC, 5) este un fapt
+                Scop curent is(getShortest[3,4,5], ?LS)
+                  is(?X, ?X) este un fapt
+                    Scop curent is(getMiddle[3,4,5], ?LM)
+                      is(?X, ?X) este un fapt
+                        Scop curent is(getLongest[3,4,5], ?LL)
+                          is(?X, ?X) este un fapt
+                            Scop curent zero(compute_pitagoras[3,4,5])
+                              zero(0) este un fapt
+                              ***************
+                                dreptunghic(ABC) is true
+Gata
+dreptunghic(ABC) is True
+
+Scopul de demonstrat dreptunghic(ACD)
+  Scop curent dreptunghic(ACD)
+  Incercam [ dreptunghic(ACD) : size(get[ACD,0], ?LA), size(get[ACD,1], ?LB), size(get[ACD,2], ?LC), is(getShortest[?LA,?LB,?LC], ?LS), is(getMiddle[?LA,?LB,?LC], ?LM), is(getLongest[?LA,?LB,?LC], ?LL), zero(compute_pitagoras[?LS,?LM,?LL]) ]
+  Scopuri de demonstrat: size(get[ACD,0], ?LA), size(get[ACD,1], ?LB), size(get[ACD,2], ?LC), is(getShortest[?LA,?LB,?LC], ?LS), is(getMiddle[?LA,?LB,?LC], ?LM), is(getLongest[?LA,?LB,?LC], ?LL), zero(compute_pitagoras[?LS,?LM,?LL])
+    Scop curent size(get[ACD,0], ?LA)
+      size(AC, 5) este un fapt
+        Scop curent size(get[ACD,1], ?LB)
+          size(CD, 3) este un fapt
+            Scop curent size(get[ACD,2], ?LC)
+              size(AD, 4) este un fapt
+                Scop curent is(getShortest[5,3,4], ?LS)
+                  is(?X, ?X) este un fapt
+                    Scop curent is(getMiddle[5,3,4], ?LM)
+                      is(?X, ?X) este un fapt
+                        Scop curent is(getLongest[5,3,4], ?LL)
+                          is(?X, ?X) este un fapt
+                            Scop curent zero(compute_pitagoras[3,4,5])
+                              zero(0) este un fapt
+                              ***************
+                                dreptunghic(ACD) is true
+Gata
+dreptunghic(ACD) is True
+
+Scopul de demonstrat dreptunghic(BCE)
+  Scop curent dreptunghic(BCE)
+  Incercam [ dreptunghic(BCE) : size(get[BCE,0], ?LA), size(get[BCE,1], ?LB), size(get[BCE,2], ?LC), is(getShortest[?LA,?LB,?LC], ?LS), is(getMiddle[?LA,?LB,?LC], ?LM), is(getLongest[?LA,?LB,?LC], ?LL), zero(compute_pitagoras[?LS,?LM,?LL]) ]
+  Scopuri de demonstrat: size(get[BCE,0], ?LA), size(get[BCE,1], ?LB), size(get[BCE,2], ?LC), is(getShortest[?LA,?LB,?LC], ?LS), is(getMiddle[?LA,?LB,?LC], ?LM), is(getLongest[?LA,?LB,?LC], ?LL), zero(compute_pitagoras[?LS,?LM,?LL])
+    Scop curent size(get[BCE,0], ?LA)
+      size(BC, 4) este un fapt
+        Scop curent size(get[BCE,1], ?LB)
+          size(CE, 3) este un fapt
+            Scop curent size(get[BCE,2], ?LC)
+              size(BE, 3) este un fapt
+                Scop curent is(getShortest[4,3,3], ?LS)
+                  is(?X, ?X) este un fapt
+                    Scop curent is(getMiddle[4,3,3], ?LM)
+                      is(?X, ?X) este un fapt
+                        Scop curent is(getLongest[4,3,3], ?LL)
+                          is(?X, ?X) este un fapt
+                            Scop curent zero(compute_pitagoras[3,3,4])
+  dreptunghic(BCE) is false
+Gata
+dreptunghic(BCE) is false
+
+Scopul de demonstrat dreptunghic(ABF)
+  Scop curent dreptunghic(ABF)
+  Incercam [ dreptunghic(ABF) : size(get[ABF,0], ?LA), size(get[ABF,1], ?LB), size(get[ABF,2], ?LC), is(getShortest[?LA,?LB,?LC], ?LS), is(getMiddle[?LA,?LB,?LC], ?LM), is(getLongest[?LA,?LB,?LC], ?LL), zero(compute_pitagoras[?LS,?LM,?LL]) ]
+  Scopuri de demonstrat: size(get[ABF,0], ?LA), size(get[ABF,1], ?LB), size(get[ABF,2], ?LC), is(getShortest[?LA,?LB,?LC], ?LS), is(getMiddle[?LA,?LB,?LC], ?LM), is(getLongest[?LA,?LB,?LC], ?LL), zero(compute_pitagoras[?LS,?LM,?LL])
+    Scop curent size(get[ABF,0], ?LA)
+      size(AB, 3) este un fapt
+        Scop curent size(get[ABF,1], ?LB)
+          size(BF, 1) este un fapt
+            Scop curent size(get[ABF,2], ?LC)
+              size(AF, 2) este un fapt
+                Scop curent is(getShortest[3,1,2], ?LS)
+                  is(?X, ?X) este un fapt
+                    Scop curent is(getMiddle[3,1,2], ?LM)
+                      is(?X, ?X) este un fapt
+                        Scop curent is(getLongest[3,1,2], ?LL)
+                          is(?X, ?X) este un fapt
+                            Scop curent zero(compute_pitagoras[1,2,3])
+  dreptunghic(ABF) is false
+Gata
+dreptunghic(ABF) is false
+

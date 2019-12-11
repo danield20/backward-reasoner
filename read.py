@@ -14,7 +14,11 @@ def compose_function(function_string):
     for t in terms:
         if t == "":
             continue
-        if "?" in t:
+
+        if "(" in t:
+            new_funct = compose_function(t)
+            made_terms.append(new_funct)
+        elif "?" in t:
             new_var = atom_utils.make_var(t[1:])
             made_terms.append(new_var)
         else:

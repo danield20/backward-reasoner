@@ -1,0 +1,193 @@
+('ATOM', 'P', [('CONST', '1')]) 1.0
+('ATOM', 'P', [('CONST', '2')]) 1.0
+('ATOM', 'Q', [('CONST', '3')]) 1.0
+('V', 'V', [('ATOM', 'r', [('VAR', 'a')]), ('~', '~', [('ATOM', 'P', [('VAR', 'a')])]), ('~', '~', [('ATOM', 'Q', [('VAR', 'b'), ('CONST', 'hello')])])]) 1.0
+('ATOM', 't', [('VAR', 'x')]) 1.0
+('V', 'V', [('ATOM', 's', []), ('~', '~', [('ATOM', 'P', [('CONST', '3')])]), ('~', '~', [('ATOM', 't', [('CONST', '1')])])]) 1.0
+('V', 'V', [('ATOM', 's', []), ('~', '~', [('ATOM', 'P', [('CONST', '2')])]), ('~', '~', [('ATOM', 't', [('CONST', '1')])])]) 1.0
+('V', 'V', [('ATOM', 'pq', [('VAR', 'x'), ('VAR', 'y')]), ('~', '~', [('ATOM', 'P', [('VAR', 'x')])]), ('~', '~', [('ATOM', 'Q', [('VAR', 'y')])])]) 1.0
+
+Scopul de demonstrat P(1)
+  Scop curent P(1)
+    P(1) este un fapt
+    ***************
+      P(1) is true
+Gata
+P(1) is True
+
+Scopul de demonstrat P(3)
+  Scop curent P(3)
+  P(3) is false
+Gata
+P(3) is false
+
+Scopul de demonstrat Q(1)
+  Scop curent Q(1)
+  Q(1) is false
+Gata
+Q(1) is false
+
+Scopul de demonstrat P(X)
+  Scop curent P(X)
+  P(X) is false
+Gata
+P(X) is false
+
+Scopul de demonstrat t(1)
+  Scop curent t(1)
+    t(?x) este un fapt
+    ***************
+      t(1) is true
+Gata
+t(1) is True
+
+Scopul de demonstrat Q(?y)
+  Scop curent Q(?y)
+    Q(3) este un fapt
+    ***************
+    Solution:
+      y : 3
+Gata
+Solution 0 = y : ('CONST', '3')
+
+Scopul de demonstrat P(?X)
+  Scop curent P(?X)
+    P(1) este un fapt
+    ***************
+    Solution:
+      X : 1
+    P(2) este un fapt
+    ***************
+    Solution:
+      X : 2
+Gata
+Solution 0 = X : ('CONST', '1')
+Solution 1 = X : ('CONST', '2')
+
+Scopul de demonstrat pq(1, 3)
+  Scop curent pq(1, 3)
+  Incercam [ pq(1, 3) : P(1), Q(3) ]
+  Scopuri de demonstrat: P(1), Q(3)
+    Scop curent P(1)
+      P(1) este un fapt
+        Scop curent Q(3)
+          Q(3) este un fapt
+          ***************
+            pq(1, 3) is true
+Gata
+pq(1, 3) is True
+
+Scopul de demonstrat pq(2, 3)
+  Scop curent pq(2, 3)
+  Incercam [ pq(2, 3) : P(2), Q(3) ]
+  Scopuri de demonstrat: P(2), Q(3)
+    Scop curent P(2)
+      P(2) este un fapt
+        Scop curent Q(3)
+          Q(3) este un fapt
+          ***************
+            pq(2, 3) is true
+Gata
+pq(2, 3) is True
+
+Scopul de demonstrat pq(?a, 3)
+  Scop curent pq(?a, 3)
+  Incercam [ pq(?a, 3) : P(?a), Q(3) ]
+  Scopuri de demonstrat: P(?a), Q(3)
+    Scop curent P(?a)
+      P(1) este un fapt
+        Scop curent Q(3)
+          Q(3) este un fapt
+          ***************
+          Solution:
+            a : 1
+      P(2) este un fapt
+        Scop curent Q(3)
+          Q(3) este un fapt
+          ***************
+          Solution:
+            a : 2
+Gata
+Solution 0 = a : ('CONST', '1')
+Solution 1 = a : ('CONST', '2')
+
+Scopul de demonstrat pq(?x, 3)
+  Scop curent pq(?x, 3)
+  Incercam [ pq(?x, 3) : P(?x), Q(3) ]
+  Scopuri de demonstrat: P(?x), Q(3)
+    Scop curent P(?x)
+      P(1) este un fapt
+        Scop curent Q(3)
+          Q(3) este un fapt
+          ***************
+          Solution:
+            x : 1
+      P(2) este un fapt
+        Scop curent Q(3)
+          Q(3) este un fapt
+          ***************
+          Solution:
+            x : 2
+Gata
+Solution 0 = x : ('CONST', '1')
+Solution 1 = x : ('CONST', '2')
+
+Scopul de demonstrat pq(?y, 3)
+  Scop curent pq(?y, 3)
+  Incercam [ pq(?y, 3) : P(?y), Q(3) ]
+  Scopuri de demonstrat: P(?y), Q(3)
+    Scop curent P(?y)
+      P(1) este un fapt
+        Scop curent Q(3)
+          Q(3) este un fapt
+          ***************
+          Solution:
+            y : 1
+      P(2) este un fapt
+        Scop curent Q(3)
+          Q(3) este un fapt
+          ***************
+          Solution:
+            y : 2
+Gata
+Solution 0 = y : ('CONST', '1')
+Solution 1 = y : ('CONST', '2')
+
+Scopul de demonstrat pq(?a, ?b)
+  Scop curent pq(?a, ?b)
+  Incercam [ pq(?a, ?b) : P(?a), Q(?b) ]
+  Scopuri de demonstrat: P(?a), Q(?b)
+    Scop curent P(?a)
+      P(1) este un fapt
+        Scop curent Q(?b)
+          Q(3) este un fapt
+          ***************
+          Solution:
+            a : 1
+            b : 3
+      P(2) este un fapt
+        Scop curent Q(?b)
+          Q(3) este un fapt
+          ***************
+          Solution:
+            a : 2
+            b : 3
+Gata
+Solution 0 = a : ('CONST', '1'), b : ('CONST', '3')
+Solution 1 = a : ('CONST', '2'), b : ('CONST', '3')
+
+Scopul de demonstrat s()
+  Scop curent s()
+  Incercam [ s() : P(2), t(1) ]
+  Scopuri de demonstrat: P(2), t(1)
+    Scop curent P(2)
+      P(2) este un fapt
+        Scop curent t(1)
+          t(?x) este un fapt
+          ***************
+            s() is true
+  Incercam [ s() : P(3), t(1) ]
+  Scopuri de demonstrat: P(3), t(1)
+Gata
+s() is True
+

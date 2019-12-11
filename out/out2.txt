@@ -1,0 +1,190 @@
+('ATOM', 'Lies', [('CONST', 'Lion'), ('CONST', 'Monday')]) 1.0
+('ATOM', 'Lies', [('CONST', 'Lion'), ('CONST', 'Tuesday')]) 1.0
+('ATOM', 'Lies', [('CONST', 'Lion'), ('CONST', 'Wednesday')]) 1.0
+('ATOM', 'True', [('CONST', 'Lion'), ('CONST', 'Thursday')]) 1.0
+('ATOM', 'True', [('CONST', 'Lion'), ('CONST', 'Friday')]) 1.0
+('ATOM', 'True', [('CONST', 'Lion'), ('CONST', 'Saturday')]) 1.0
+('ATOM', 'True', [('CONST', 'Lion'), ('CONST', 'Sunday')]) 1.0
+('ATOM', 'True', [('CONST', 'Unicorn'), ('CONST', 'Monday')]) 1.0
+('ATOM', 'True', [('CONST', 'Unicorn'), ('CONST', 'Tuesday')]) 1.0
+('ATOM', 'True', [('CONST', 'Unicorn'), ('CONST', 'Wednesday')]) 1.0
+('ATOM', 'Lies', [('CONST', 'Unicorn'), ('CONST', 'Thursday')]) 1.0
+('ATOM', 'Lies', [('CONST', 'Unicorn'), ('CONST', 'Friday')]) 1.0
+('ATOM', 'Lies', [('CONST', 'Unicorn'), ('CONST', 'Saturday')]) 1.0
+('ATOM', 'True', [('CONST', 'Unicorn'), ('CONST', 'Sunday')]) 1.0
+('ATOM', 'Yesterday', [('CONST', 'Monday'), ('CONST', 'Sunday')]) 1.0
+('ATOM', 'Yesterday', [('CONST', 'Tuesday'), ('CONST', 'Monday')]) 1.0
+('ATOM', 'Yesterday', [('CONST', 'Wednesday'), ('CONST', 'Tuesday')]) 1.0
+('ATOM', 'Yesterday', [('CONST', 'Thursday'), ('CONST', 'Wednesday')]) 1.0
+('ATOM', 'Yesterday', [('CONST', 'Friday'), ('CONST', 'Thursday')]) 1.0
+('ATOM', 'Yesterday', [('CONST', 'Saturday'), ('CONST', 'Friday')]) 1.0
+('ATOM', 'Yesterday', [('CONST', 'Sunday'), ('CONST', 'Saturday')]) 1.0
+('V', 'V', [('ATOM', 'IWasLyingYesterday', [('VAR', 'animal'), ('VAR', 'day')]), ('~', '~', [('ATOM', 'Lies', [('VAR', 'animal'), ('VAR', 'day')])]), ('~', '~', [('ATOM', 'Yesterday', [('VAR', 'day'), ('VAR', 'yesterday')])]), ('~', '~', [('ATOM', 'True', [('VAR', 'animal'), ('VAR', 'yesterday')])])]) 1.0
+('V', 'V', [('ATOM', 'IWasLyingYesterday', [('VAR', 'animal'), ('VAR', 'day')]), ('~', '~', [('ATOM', 'True', [('VAR', 'animal'), ('VAR', 'day')])]), ('~', '~', [('ATOM', 'Yesterday', [('VAR', 'day'), ('VAR', 'yesterday')])]), ('~', '~', [('ATOM', 'Lies', [('VAR', 'animal'), ('VAR', 'yesterday')])])]) 1.0
+('V', 'V', [('ATOM', 'Today', [('VAR', 'day')]), ('~', '~', [('ATOM', 'IWasLyingYesterday', [('CONST', 'Lion'), ('VAR', 'day')])]), ('~', '~', [('ATOM', 'IWasLyingYesterday', [('CONST', 'Unicorn'), ('VAR', 'day')])])]) 1.0
+
+Scopul de demonstrat Today(?day)
+  Scop curent Today(?day)
+  Incercam [ Today(?day) : IWasLyingYesterday(Lion, ?day), IWasLyingYesterday(Unicorn, ?day) ]
+  Scopuri de demonstrat: IWasLyingYesterday(Lion, ?day), IWasLyingYesterday(Unicorn, ?day)
+    Scop curent IWasLyingYesterday(Lion, ?day)
+    Incercam [ IWasLyingYesterday(Lion, ?day) : True(Lion, ?day), Yesterday(?day, ?yesterday), Lies(Lion, ?yesterday) ]
+    Scopuri de demonstrat: True(Lion, ?day), Yesterday(?day, ?yesterday), Lies(Lion, ?yesterday)
+      Scop curent True(Lion, ?day)
+        True(Lion, Thursday) este un fapt
+          Scop curent Yesterday(Thursday, ?yesterday)
+            Yesterday(Thursday, Wednesday) este un fapt
+              Scop curent Lies(Lion, Wednesday)
+                Lies(Lion, Wednesday) este un fapt
+                  Scop curent IWasLyingYesterday(Unicorn, Thursday)
+                  Incercam [ IWasLyingYesterday(Unicorn, Thursday) : True(Unicorn, Thursday), Yesterday(Thursday, ?yesterday), Lies(Unicorn, ?yesterday) ]
+                  Scopuri de demonstrat: True(Unicorn, Thursday), Yesterday(Thursday, ?yesterday), Lies(Unicorn, ?yesterday)
+                    Scop curent True(Unicorn, Thursday)
+                  Incercam [ IWasLyingYesterday(Unicorn, Thursday) : Lies(Unicorn, Thursday), Yesterday(Thursday, ?yesterday), True(Unicorn, ?yesterday) ]
+                  Scopuri de demonstrat: Lies(Unicorn, Thursday), Yesterday(Thursday, ?yesterday), True(Unicorn, ?yesterday)
+                    Scop curent Lies(Unicorn, Thursday)
+                      Lies(Unicorn, Thursday) este un fapt
+                        Scop curent Yesterday(Thursday, Wednesday)
+                          Yesterday(Thursday, Wednesday) este un fapt
+                            Scop curent True(Unicorn, Wednesday)
+                              True(Unicorn, Wednesday) este un fapt
+                              ***************
+                              Solution:
+                                day : Thursday
+                                yesterday : Wednesday
+        True(Lion, Friday) este un fapt
+          Scop curent Yesterday(Friday, ?yesterday)
+            Yesterday(Friday, Thursday) este un fapt
+              Scop curent Lies(Lion, Thursday)
+        True(Lion, Saturday) este un fapt
+          Scop curent Yesterday(Saturday, ?yesterday)
+            Yesterday(Saturday, Friday) este un fapt
+              Scop curent Lies(Lion, Friday)
+        True(Lion, Sunday) este un fapt
+          Scop curent Yesterday(Sunday, ?yesterday)
+            Yesterday(Sunday, Saturday) este un fapt
+              Scop curent Lies(Lion, Saturday)
+    Incercam [ IWasLyingYesterday(Lion, ?day) : Lies(Lion, ?day), Yesterday(?day, ?yesterday), True(Lion, ?yesterday) ]
+    Scopuri de demonstrat: Lies(Lion, ?day), Yesterday(?day, ?yesterday), True(Lion, ?yesterday)
+      Scop curent Lies(Lion, ?day)
+        Lies(Lion, Monday) este un fapt
+          Scop curent Yesterday(Monday, ?yesterday)
+            Yesterday(Monday, Sunday) este un fapt
+              Scop curent True(Lion, Sunday)
+                True(Lion, Sunday) este un fapt
+                  Scop curent IWasLyingYesterday(Unicorn, Monday)
+                  Incercam [ IWasLyingYesterday(Unicorn, Monday) : True(Unicorn, Monday), Yesterday(Monday, ?yesterday), Lies(Unicorn, ?yesterday) ]
+                  Scopuri de demonstrat: True(Unicorn, Monday), Yesterday(Monday, ?yesterday), Lies(Unicorn, ?yesterday)
+                    Scop curent True(Unicorn, Monday)
+                      True(Unicorn, Monday) este un fapt
+                        Scop curent Yesterday(Monday, Sunday)
+                          Yesterday(Monday, Sunday) este un fapt
+                            Scop curent Lies(Unicorn, Sunday)
+                  Incercam [ IWasLyingYesterday(Unicorn, Monday) : Lies(Unicorn, Monday), Yesterday(Monday, ?yesterday), True(Unicorn, ?yesterday) ]
+                  Scopuri de demonstrat: Lies(Unicorn, Monday), Yesterday(Monday, ?yesterday), True(Unicorn, ?yesterday)
+                    Scop curent Lies(Unicorn, Monday)
+        Lies(Lion, Tuesday) este un fapt
+          Scop curent Yesterday(Tuesday, ?yesterday)
+            Yesterday(Tuesday, Monday) este un fapt
+              Scop curent True(Lion, Monday)
+        Lies(Lion, Wednesday) este un fapt
+          Scop curent Yesterday(Wednesday, ?yesterday)
+            Yesterday(Wednesday, Tuesday) este un fapt
+              Scop curent True(Lion, Tuesday)
+Gata
+Solution 0 = day : ('CONST', 'Thursday')
+
+Scopul de demonstrat IWasLyingYesterday(?animal, ?day)
+  Scop curent IWasLyingYesterday(?animal, ?day)
+  Incercam [ IWasLyingYesterday(?animal, ?day) : True(?animal, ?day), Yesterday(?day, ?yesterday), Lies(?animal, ?yesterday) ]
+  Scopuri de demonstrat: True(?animal, ?day), Yesterday(?day, ?yesterday), Lies(?animal, ?yesterday)
+    Scop curent True(?animal, ?day)
+      True(Lion, Thursday) este un fapt
+        Scop curent Yesterday(Thursday, ?yesterday)
+          Yesterday(Thursday, Wednesday) este un fapt
+            Scop curent Lies(Lion, Wednesday)
+              Lies(Lion, Wednesday) este un fapt
+              ***************
+              Solution:
+                animal : Lion
+                day : Thursday
+                yesterday : Wednesday
+      True(Lion, Friday) este un fapt
+        Scop curent Yesterday(Friday, ?yesterday)
+          Yesterday(Friday, Thursday) este un fapt
+            Scop curent Lies(Lion, Thursday)
+      True(Lion, Saturday) este un fapt
+        Scop curent Yesterday(Saturday, ?yesterday)
+          Yesterday(Saturday, Friday) este un fapt
+            Scop curent Lies(Lion, Friday)
+      True(Lion, Sunday) este un fapt
+        Scop curent Yesterday(Sunday, ?yesterday)
+          Yesterday(Sunday, Saturday) este un fapt
+            Scop curent Lies(Lion, Saturday)
+      True(Unicorn, Monday) este un fapt
+        Scop curent Yesterday(Monday, ?yesterday)
+          Yesterday(Monday, Sunday) este un fapt
+            Scop curent Lies(Unicorn, Sunday)
+      True(Unicorn, Tuesday) este un fapt
+        Scop curent Yesterday(Tuesday, ?yesterday)
+          Yesterday(Tuesday, Monday) este un fapt
+            Scop curent Lies(Unicorn, Monday)
+      True(Unicorn, Wednesday) este un fapt
+        Scop curent Yesterday(Wednesday, ?yesterday)
+          Yesterday(Wednesday, Tuesday) este un fapt
+            Scop curent Lies(Unicorn, Tuesday)
+      True(Unicorn, Sunday) este un fapt
+        Scop curent Yesterday(Sunday, ?yesterday)
+          Yesterday(Sunday, Saturday) este un fapt
+            Scop curent Lies(Unicorn, Saturday)
+              Lies(Unicorn, Saturday) este un fapt
+              ***************
+              Solution:
+                animal : Unicorn
+                day : Sunday
+                yesterday : Saturday
+  Incercam [ IWasLyingYesterday(?animal, ?day) : Lies(?animal, ?day), Yesterday(?day, ?yesterday), True(?animal, ?yesterday) ]
+  Scopuri de demonstrat: Lies(?animal, ?day), Yesterday(?day, ?yesterday), True(?animal, ?yesterday)
+    Scop curent Lies(?animal, ?day)
+      Lies(Lion, Monday) este un fapt
+        Scop curent Yesterday(Monday, ?yesterday)
+          Yesterday(Monday, Sunday) este un fapt
+            Scop curent True(Lion, Sunday)
+              True(Lion, Sunday) este un fapt
+              ***************
+              Solution:
+                animal : Lion
+                day : Monday
+                yesterday : Sunday
+      Lies(Lion, Tuesday) este un fapt
+        Scop curent Yesterday(Tuesday, ?yesterday)
+          Yesterday(Tuesday, Monday) este un fapt
+            Scop curent True(Lion, Monday)
+      Lies(Lion, Wednesday) este un fapt
+        Scop curent Yesterday(Wednesday, ?yesterday)
+          Yesterday(Wednesday, Tuesday) este un fapt
+            Scop curent True(Lion, Tuesday)
+      Lies(Unicorn, Thursday) este un fapt
+        Scop curent Yesterday(Thursday, ?yesterday)
+          Yesterday(Thursday, Wednesday) este un fapt
+            Scop curent True(Unicorn, Wednesday)
+              True(Unicorn, Wednesday) este un fapt
+              ***************
+              Solution:
+                animal : Unicorn
+                day : Thursday
+                yesterday : Wednesday
+      Lies(Unicorn, Friday) este un fapt
+        Scop curent Yesterday(Friday, ?yesterday)
+          Yesterday(Friday, Thursday) este un fapt
+            Scop curent True(Unicorn, Thursday)
+      Lies(Unicorn, Saturday) este un fapt
+        Scop curent Yesterday(Saturday, ?yesterday)
+          Yesterday(Saturday, Friday) este un fapt
+            Scop curent True(Unicorn, Friday)
+Gata
+Solution 0 = animal : ('CONST', 'Lion'), day : ('CONST', 'Thursday')
+Solution 1 = animal : ('CONST', 'Unicorn'), day : ('CONST', 'Sunday')
+Solution 2 = animal : ('CONST', 'Lion'), day : ('CONST', 'Monday')
+Solution 3 = animal : ('CONST', 'Unicorn'), day : ('CONST', 'Thursday')
+
